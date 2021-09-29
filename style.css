@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -57,21 +58,25 @@ article {
 }
 
 .row {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   grid-gap: 3rem;
   margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
   .row {
-    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
   }
 }
 
 @media only screen and (max-width: 500px) {
   .row {
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -322,11 +327,13 @@ a {
   text-transform: unset;
   text-decoration: none;
   color: black;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
 a:hover {
   color: grey;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -339,7 +346,7 @@ a:hover {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   z-index: 200;
 }
 
@@ -356,6 +363,7 @@ a:hover {
   bottom: 6rem;
   left: 6rem;
   border-radius: 4rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   cursor: pointer;
 }
@@ -381,8 +389,10 @@ a:hover {
   top: 50%;
   left: 50%;
   border-radius: 4rem;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: white;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -391,6 +401,7 @@ a:hover {
   width: 8rem;
   height: 8rem;
   background: white;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -398,6 +409,7 @@ a:hover {
   content: "";
   width: 8rem;
   height: 8rem;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -408,7 +420,8 @@ a:hover {
   top: 6rem;
   left: 4rem;
   position: absolute;
-  transform: translate(-2rem, -2rem);
+  -webkit-transform: translate(-2rem, -2rem);
+          transform: translate(-2rem, -2rem);
   z-index: 2;
 }
 
@@ -419,6 +432,7 @@ a:hover {
   background-color: black;
   position: absolute;
   top: -1.25rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -429,16 +443,19 @@ a:hover {
   background-color: black;
   position: absolute;
   top: 1.25rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .header_line--open::before {
   top: 0rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .header_line--open::after {
   top: 0rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -449,6 +466,7 @@ a:hover {
   bottom: 6rem;
   padding-right: 4rem;
   opacity: 0;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -466,6 +484,7 @@ a:hover {
 .header_accordion {
   width: 100%;
   opacity: 0;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -476,8 +495,10 @@ a:hover {
   position: fixed;
   bottom: 6rem;
   left: 6rem;
-  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   border-radius: 6rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   overflow: hidden;
   backdrop-filter: blur(20px);
@@ -504,6 +525,7 @@ a:hover {
   bottom: 3rem;
   left: 3rem;
   border-radius: 0rem;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -531,8 +553,10 @@ a:hover {
 .header_popup--open .header_accordion,
 .header_popup--open .header_copyRight {
   opacity: 1;
+  -webkit-transition: 0.8s all ease;
   transition: 0.8s all ease;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .header_menu {
@@ -561,11 +585,13 @@ a:hover {
   text-transform: capitalize;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
 .header_item a:hover {
   color: black;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -645,15 +671,19 @@ a:hover {
     height: 2rem;
     position: absolute;
     right: 2rem;
+    -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
   }
   .index_dynamicTitle--open::after {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
   }
 }
 
 .index_nav {
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   overflow: hidden;
 }
@@ -666,6 +696,7 @@ a:hover {
 
 .index_nav--open {
   max-height: 100vh;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -702,6 +733,7 @@ a.toc-link {
   height: 100%;
   font-size: 2rem;
   display: block;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   text-decoration: none;
   padding: 1rem 0;
@@ -710,17 +742,20 @@ a.toc-link {
 
 a.toc-link:hover {
   color: black;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .is-collapsible {
   max-height: 1000px;
   overflow: hidden;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .is-collapsed {
   max-height: 0;
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
@@ -761,6 +796,7 @@ a.toc-link:hover {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -768,6 +804,7 @@ a.toc-link:hover {
   max-height: unset;
   opacity: 1;
   padding: 1rem 0rem;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -794,11 +831,13 @@ a.toc-link:hover {
   position: absolute;
   left: 1.5rem;
   top: 0.5rem;
+  -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
 
 .accordion_lineII--open {
   height: 0px !important;
+  -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
 
@@ -834,12 +873,14 @@ a.toc-link:hover {
 }
 
 .imgComparison__silder {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   position: relative;
   width: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   height: 1px;
   background: gray;
   outline: none;
@@ -854,16 +895,19 @@ a.toc-link:hover {
   background: black;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
 
 .imgComparison__silder::-webkit-slider-thumb:hover {
   background: #8FE044;
+  -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
 
 .imgComparison__silder::-moz-range-thumb {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   width: 16px;
   height: 8px;
@@ -946,26 +990,34 @@ h2 {
 }
 
 .toolBar_wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 31rem 9rem 7rem auto;
+  -ms-grid-columns: 31rem 9rem 9rem 9rem auto;
+      grid-template-columns: 31rem 9rem 9rem 9rem auto;
   grid-gap: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .toolBar_wrapper {
-    grid-template-columns: auto 9rem 7rem 7rem 25rem;
+    -ms-grid-columns: auto 9rem 9rem 9rem 9rem 25rem;
+        grid-template-columns: auto 9rem 9rem 9rem 9rem 25rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .toolBar_wrapper {
-    grid-template-columns: auto 9rem 3rem 3rem 25rem;
+    -ms-grid-columns: auto 9rem 3rem 3rem 3rem 25rem;
+        grid-template-columns: auto 9rem 3rem 3rem 3rem 25rem;
   }
 }
 
 .toolBar_logo {
   position: relative;
   z-index: 1000;
+  width: 10rem;
+  position: fixed;
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 .toolBar_logoSvg {
@@ -973,7 +1025,9 @@ h2 {
 }
 
 .toolBar_translate {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -983,7 +1037,9 @@ h2 {
 }
 
 .toolBar_logOut {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .toolBar_transtxt {
@@ -1002,21 +1058,25 @@ h2 {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 1rem;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
 .toolBar_transSwitch:hover {
   background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
 .toolBar_transSwitch--active {
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   background-color: #8FE044;
 }
 
 .toolBar_transSwitch--active:hover {
   background-color: #a9e770;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
 
@@ -1025,17 +1085,23 @@ h2 {
   height: 1rem;
   background-color: black;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   border-radius: 50%;
 }
 
 .toolBar_transPin--active {
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   background-color: black;
   margin: 0.5rem 1.5rem 0.5rem 0.5rem;
 }
 
 .toolBar_search {
-  align-self: center;
-  justify-self: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
 }
+/*# sourceMappingURL=style.css.map */
