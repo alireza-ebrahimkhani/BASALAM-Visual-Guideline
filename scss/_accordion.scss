@@ -1,52 +1,53 @@
-.accordion{
-    &_list{
-        list-style: none;
-        width: 100%;
-    }
-    &_header{
-        cursor: pointer;
-        padding: 2rem 0;
-    }
-    &_header h6 {
-        display: inline-block;
-    }
-    &_body{
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: $fastMotion;
-    }
-    &_body--active{
-        max-height: unset;
-        opacity: 1;
-        padding: 1rem 0rem;
-        transition: $fastMotion;
-    }
-    &_icon{
-        width: 3rem;
-        height: 3rem;
-        float: right;
-        position: relative;
-    }
-    &_lineI{
-        height: 0.125rem;
-        width: 2.125rem;
-        background-color: black;
-        position: absolute;
-        top: 1.5rem;
-        left:0.5rem
-    }
-    &_lineII{
-        height: 2.125rem;
-        width: 0.125rem;
-        background-color: black;
-        position: absolute;
-        left: 1.5rem;
-        top:0.5rem;
-        transition: .3s all ease;
-    }
-    &_lineII--open{
-        height: 0px !important;
-        transition: .3s all ease;
-    }
+.accordion {
+  &_list {
+    list-style: none;
+    width: 100%;
+  }
+  &_header {
+    cursor: pointer;
+    padding: 2rem 0;
+    color: white;
+  }
+  &_header h6 {
+    display: inline-block;
+  }
+  &_body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: $fastMotion;
+  }
+  &_body--active {
+    max-height: unset;
+    opacity: 1;
+    padding: 1rem 0rem;
+    transition: $fastMotion;
+  }
+  &_icon {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    position: relative;
+  }
+  &_lineI {
+    height: 0.125rem;
+    width: 2.125rem;
+    background-color: white;
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+  }
+  &_lineII {
+    height: 2.125rem;
+    width: 0.125rem;
+    background-color: white;
+    position: absolute;
+    left: 1.5rem;
+    top: 0.5rem;
+    transition: 0.3s all ease;
+  }
+  &_lineII--open {
+    height: 0px !important;
+    transition: 0.3s all ease;
+  }
 }
