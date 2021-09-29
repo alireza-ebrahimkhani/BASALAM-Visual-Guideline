@@ -22,7 +22,7 @@ header_close.addEventListener('click' , ()=>{
         header_popup.classList.remove('header_popup--open');
         header_line.classList.remove('header_line--open');
         header_hamIco.classList.remove('header_hamIco--open');
-        header_close.classList.toggle('header_close--open');
+        header_close.classList.remove('header_close--open');
         menu_is_open = false;
     }
 }, true)
@@ -40,7 +40,7 @@ $(window).on(
         header_popup.classList.remove('header_popup--open');
         header_line.classList.remove('header_line--open');
         header_hamIco.classList.remove('header_hamIco--open');
-        header_close.classList.toggle('header_close--open');
+        header_close.classList.remove('header_close--open');
         menu_is_open = false;
     }
   }

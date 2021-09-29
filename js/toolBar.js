@@ -1,5 +1,6 @@
 let index = document.querySelector(".index");
 let toolBar_wrapper = document.querySelector(".toolBar_wrapper");
+let body_wrapper = document.querySelector(".body_wrapper");
 let sideBar = document.querySelector(".sideBar");
 let index_dynamicTitle = document.querySelector(".index_dynamicTitle");
 let index_nav = document.querySelector(".index_nav");
@@ -26,4 +27,15 @@ function changeTitle(){
   index_dynamicTitle.classList.remove("index_dynamicTitle--open");
   index_dynamicTitle.innerHTML = active_link.innerHTML;
 }
-
+if(window.outerWidth <= 1024){
+  toolBar_wrapper.appendChild(index);
+}else{
+  body_wrapper.appendChild(index);
+}
+window.addEventListener("resize" , function(){ 
+if(window.outerWidth <= 1024){
+  toolBar_wrapper.appendChild(index);
+}else{
+  body_wrapper.appendChild(index);
+}
+});

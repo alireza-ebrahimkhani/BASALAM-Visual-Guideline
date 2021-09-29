@@ -29,6 +29,9 @@ article {
   @include mScreen() {
     padding: 0 3rem;
   }
+  @include sScreen() {
+    padding: 0 2rem;
+  }
 }
 .row {
   display: grid;
