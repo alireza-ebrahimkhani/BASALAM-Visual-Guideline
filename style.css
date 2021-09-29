@@ -346,7 +346,7 @@ a:hover {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   z-index: 200;
 }
 
@@ -992,15 +992,15 @@ h2 {
 .toolBar_wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 31rem 9rem 9rem 9rem auto;
-      grid-template-columns: 31rem 9rem 9rem 9rem auto;
+  -ms-grid-columns: 31rem 9rem 9rem 7rem auto;
+      grid-template-columns: 31rem 9rem 9rem 7rem auto;
   grid-gap: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .toolBar_wrapper {
-    -ms-grid-columns: auto 9rem 9rem 9rem 9rem 25rem;
-        grid-template-columns: auto 9rem 9rem 9rem 9rem 25rem;
+    -ms-grid-columns: auto 9rem 7rem 7rem 7rem 25rem;
+        grid-template-columns: auto 9rem 7rem 7rem 7rem 25rem;
   }
 }
 
@@ -1101,7 +1101,246 @@ h2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.toolBar_hamIco {
+  width: 8rem;
+  height: 8rem;
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  border-radius: 4rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+  .toolBar_hamIco {
+    left: calc(((100% - 1440px) / 2) + 6rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .toolBar_hamIco {
+    bottom: 3rem;
+    left: 3rem;
+  }
+}
+
+.toolBar_hamIco::after {
+  content: "";
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.toolBar_hamIco:hover::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  background: white;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.toolBar_hamIco--open::after {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.toolBar_line {
+  width: 4rem;
+  height: 0.125rem;
+  background-color: black;
+  top: 6rem;
+  left: 4rem;
+  position: absolute;
+  -webkit-transform: translate(-2rem, -2rem);
+          transform: translate(-2rem, -2rem);
+  z-index: 2;
+}
+
+.toolBar_line::before {
+  content: "";
+  width: 4rem;
+  height: 0.125rem;
+  background-color: black;
+  position: absolute;
+  top: -1.25rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.toolBar_line::after {
+  content: "";
+  width: 4rem;
+  height: 0.125rem;
+  background-color: black;
+  position: absolute;
+  top: 1.25rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.toolBar_line--open::before {
+  top: 0rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.toolBar_line--open::after {
+  top: 0rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.toolBar_copyRight {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  bottom: 6rem;
+  padding-right: 4rem;
+  opacity: 0;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.toolBar_copyRight a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .toolBar_copyRight {
+    bottom: 4.5rem;
+  }
+}
+
+.toolBar_accordion {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.toolBar_popup {
+  width: 8rem;
+  height: 8rem;
+  background-color: #8fe0448e;
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  border-radius: 6rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@media only screen and (min-width: 1440px) {
+  .toolBar_popup {
+    left: calc(((100% - 1440px) / 2) + 6rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .toolBar_popup {
+    bottom: 3rem;
+    left: 3rem;
+  }
+}
+
+.toolBar_popup--open {
+  width: 60rem;
+  height: calc(100vh - 6rem);
+  bottom: 3rem;
+  left: 3rem;
+  border-radius: 0rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+@media only screen and (min-width: 1440px) {
+  .toolBar_popup--open {
+    left: calc(((100% - 1440px) / 2) + 3rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .toolBar_popup--open {
+    width: calc(100% - 6rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .toolBar_popup--open {
+    width: 100%;
+    height: 100vh;
+    bottom: 0rem;
+    left: 0rem;
+  }
+}
+
+.toolBar_popup--open .header_accordion,
+.toolBar_popup--open .header_copyRight {
+  opacity: 1;
+  -webkit-transition: 0.8s all ease;
+  transition: 0.8s all ease;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.toolBar_menu {
+  padding: 0rem 3rem 0 3rem;
+  position: fixed;
+  top: 15rem;
+  width: 100%;
+}
+
+.toolBar_accordion h6 {
+  font-weight: 300;
+}
+
+.toolBar_item {
+  list-style: none;
+}
+
+.toolBar_item {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.toolBar_item a {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.toolBar_item a:hover {
+  color: black;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 /*# sourceMappingURL=style.css.map */
