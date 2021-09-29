@@ -26,7 +26,16 @@ header_close.addEventListener('click' , ()=>{
         menu_is_open = false;
     }
 }, true)
-window.addEventListener('scroll' , ()=>{
+
+$(window).on(
+    'DOMMouseScroll mousewheel', 
+    _.throttle(
+       onScroll, 
+       1000, 
+       {trailing: false}
+    )
+  );  
+  function onScroll () {
     if (menu_is_open = true){
         header_popup.classList.remove('header_popup--open');
         header_line.classList.remove('header_line--open');
@@ -34,6 +43,6 @@ window.addEventListener('scroll' , ()=>{
         header_close.classList.toggle('header_close--open');
         menu_is_open = false;
     }
-}, true)
-
+  }
+ 
 //index
