@@ -217,7 +217,7 @@ h1,
 h1,
 .h1 {
   font-weight: 400;
-  font-size: 15rem;
+  font-size: 12rem;
   letter-spacing: -1.5;
   line-height: 1;
   text-transform: uppercase;
@@ -513,7 +513,7 @@ a:hover {
 
 @media only screen and (min-width: 1440px) {
   .header_popup {
-    left: calc(((100% - 1440px) / 2) + 6rem);
+    left: calc(((100% - 1440px) / 2) + 3rem);
   }
 }
 
@@ -528,12 +528,6 @@ a:hover {
   opacity: 1;
   visibility: visible;
   transition: 0.5s all ease;
-}
-
-@media only screen and (min-width: 1440px) {
-  .header_popup--open {
-    left: calc(((100% - 1440px) / 2) + 3rem);
-  }
 }
 
 @media only screen and (max-width: 768px) {
