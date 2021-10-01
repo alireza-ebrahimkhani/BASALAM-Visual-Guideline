@@ -389,7 +389,7 @@ a:hover {
 
 @media only screen and (min-width: 1440px) {
   .header_hamIco {
-    left: calc(((100% - 1440px) / 2) + 6rem);
+    left: calc(((100% - 1440px) / 2) + 5rem);
   }
 }
 
@@ -407,10 +407,6 @@ a:hover {
     bottom: 3rem;
     left: 3rem;
   }
-}
-
-.header_hamIco:hover {
-  background-color: #db3611;
 }
 
 .header_hamIco--open::after {

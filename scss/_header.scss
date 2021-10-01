@@ -19,7 +19,7 @@
     cursor: pointer;
     border-radius: 50%;
     @include xxlScreen() {
-      left: calc(((100% - 1440px) / 2) + 6rem);
+      left: calc(((100% - 1440px) / 2) + 5rem);
     }
     @include lScreen() {
       top: unset;
@@ -34,7 +34,7 @@
   }
   
   &_hamIco:hover {
-    background-color: darken($mainColor , 10%);
+    //background-color: darken($mainColor , 10%);
   }
   &_hamIco--open {
     &::after {
