@@ -6,11 +6,13 @@
 html{
     font-size: 8px;
 }
-body{
-}
+$maxWidth:1440px;
 img, svg{
     display: block;
 }
 $fastMotion : 0.2s all ease;
 $mediumMotion : 0.5s all ease;
 $slowMotion : 0.8s all ease;
+.br{
+    border: 1px solid $lightgrey;
+}

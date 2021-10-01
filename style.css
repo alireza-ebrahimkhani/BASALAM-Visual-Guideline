@@ -13,13 +13,17 @@ img, svg {
   display: block;
 }
 
+.br {
+  border: 1px solid #F0F0F0;
+}
+
 main {
   width: 100%;
 }
 
 article {
   width: 100%;
-  padding-top: 19.5rem;
+  padding-top: 15.5rem;
 }
 
 .sSpace {
@@ -32,6 +36,10 @@ article {
 
 .lSpace {
   margin-bottom: 8rem !important;
+}
+
+.xlSpace {
+  margin-bottom: 20rem !important;
 }
 
 .boxed {
@@ -224,6 +232,23 @@ h2,
   text-transform: capitalize;
 }
 
+h2::before,
+.h2::before {
+  content: " ";
+  height: 16rem;
+  display: block;
+  margin-top: -16rem;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  h2::before,
+  .h2::before {
+    height: 15rem;
+    margin-top: -15rem;
+  }
+}
+
 h3,
 .h3 {
   font-weight: 400;
@@ -352,19 +377,28 @@ a:hover {
 }
 
 .header_hamIco {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   position: fixed;
-  bottom: 6rem;
-  left: 6rem;
-  border-radius: 4rem;
+  top: 4rem;
+  left: 4.5rem;
   transition: 0.5s all ease;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 1440px) {
   .header_hamIco {
     left: calc(((100% - 1440px) / 2) + 6rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header_hamIco {
+    top: unset;
+    bottom: 4rem;
+    background-color: #EF5330;
+    border-radius: 50%;
   }
 }
 
@@ -375,40 +409,23 @@ a:hover {
   }
 }
 
-.header_hamIco::after {
-  content: "";
-  width: 0rem;
-  height: 0rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 4rem;
-  transform: translate(-50%, -50%);
-  background: white;
-  transition: 0.5s all ease;
-}
-
-.header_hamIco:hover::after {
-  content: "";
-  width: 8rem;
-  height: 8rem;
-  background: white;
-  transition: 0.2s all ease;
+.header_hamIco:hover {
+  background-color: #db3611;
 }
 
 .header_hamIco--open::after {
   content: "";
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   transition: 0.2s all ease;
 }
 
 .header_line {
   width: 4rem;
-  height: 0.125rem;
+  height: 0.25rem;
   background-color: black;
-  top: 6rem;
-  left: 4rem;
+  top: 5.5rem;
+  left: 3.5rem;
   position: absolute;
   transform: translate(-2rem, -2rem);
   z-index: 2;
@@ -417,7 +434,7 @@ a:hover {
 .header_line::before {
   content: "";
   width: 4rem;
-  height: 0.125rem;
+  height: 0.25rem;
   background-color: black;
   position: absolute;
   top: -1.25rem;
@@ -427,7 +444,7 @@ a:hover {
 .header_line::after {
   content: "";
   width: 4rem;
-  height: 0.125rem;
+  height: 0.25rem;
   background-color: black;
   position: absolute;
   top: 1.25rem;
@@ -447,16 +464,24 @@ a:hover {
 .header_copyRight {
   position: absolute;
   width: 100%;
-  text-align: right;
+  text-align: left;
   bottom: 6rem;
-  padding-right: 4rem;
-  opacity: 0;
+  padding-left: 4rem;
   transition: 0.2s all ease;
 }
 
 .header_copyRight a {
   color: black;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header_copyRight {
+    bottom: 3.5rem;
+    text-align: right;
+    padding-left: unset;
+    padding-right: 4rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -467,19 +492,18 @@ a:hover {
 
 .header_accordion {
   width: 100%;
-  opacity: 0;
-  transition: 0.2s all ease;
 }
 
 .header_popup {
-  width: 8rem;
-  height: 8rem;
-  background-color: #8fe0448e;
+  width: 60rem;
+  height: calc(100vh - 6rem);
+  background-color: #EF5330;
   position: fixed;
-  bottom: 6rem;
-  left: 6rem;
+  top: 3rem;
+  left: 3rem;
+  opacity: 0;
+  visibility: hidden;
   transform-origin: bottom center;
-  border-radius: 6rem;
   transition: 0.5s all ease;
   overflow: hidden;
   backdrop-filter: blur(20px);
@@ -495,17 +519,14 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .header_popup {
-    bottom: 3rem;
+    top: unset;
     left: 3rem;
   }
 }
 
 .header_popup--open {
-  width: 60rem;
-  height: calc(100vh - 6rem);
-  bottom: 3rem;
-  left: 3rem;
-  border-radius: 0rem;
+  opacity: 1;
+  visibility: visible;
   transition: 0.5s all ease;
 }
 
@@ -530,18 +551,17 @@ a:hover {
   }
 }
 
-.header_popup--open .header_accordion,
-.header_popup--open .header_copyRight {
-  opacity: 1;
-  transition: 0.8s all ease;
-  transition-delay: 0.4s;
-}
-
 .header_menu {
   padding: 0rem 3rem 0 3rem;
   position: fixed;
-  top: 15rem;
+  top: 10rem;
   width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header_menu {
+    top: 3rem;
+  }
 }
 
 .header_accordion h6 {
@@ -577,7 +597,7 @@ a:hover {
 }
 
 .index {
-  margin: 21rem 0;
+  margin: 17rem 0;
   display: inline-block;
   text-align: left;
   width: 26rem;
@@ -973,6 +993,51 @@ h2 {
   margin-left: -0.5rem;
 }
 
+.hoverImg > .hoverImg_hide {
+  opacity: 1;
+  transition: 0.2s all ease;
+}
+
+.hoverImg:hover > .hoverImg_hide {
+  opacity: 0;
+  transition: 0.2s all ease;
+}
+
+.hoverImg .hoverImg_reveal {
+  z-index: -4;
+}
+
+.smallest {
+  position: relative;
+}
+
+.smallest > img {
+  position: absolute;
+  left: 50%;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  z-index: 1  !important;
+}
+
+.logoMotion {
+  position: fixed;
+  bottom: 6rem;
+  width: 18rem;
+  left: 5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .logoMotion {
+    left: calc(((100% - 1440px) / 2) + 5rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .logoMotion {
+    display: none;
+  }
+}
+
 .toolBar {
   width: 100%;
   max-width: 1440px;
@@ -1020,11 +1085,13 @@ h2 {
   display: grid;
   grid-template-columns: auto 9.5rem;
   grid-gap: 2rem;
+  margin-left: 33rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .toolBar_wrapper {
     grid-template-columns: 9.5rem 1fr 25rem;
+    margin-left: unset;
   }
 }
 

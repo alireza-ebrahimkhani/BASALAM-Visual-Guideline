@@ -23,8 +23,10 @@
     display: grid;
     grid-template-columns: auto 9.5rem;
     grid-gap: 2rem;
+    margin-left: 33rem;
     @include lScreen() {
       grid-template-columns: 9.5rem 1fr 25rem; 
+      margin-left: unset;
     }
     @include sScreen() {
       grid-template-columns: 9.5rem 1fr; 
@@ -97,8 +99,6 @@
       float: left;
     }
   }
-  &_logOut {
-  }
   &_transtxt {
     display: inline-block;
     line-height: 3rem;
@@ -120,9 +120,9 @@
     }
     &--active {
       transition: $fastMotion;
-      background-color: $green;
+      background-color: $mainColor;
       &:hover {
-        background-color: lighten($green, 10%);
+        background-color: lighten($mainColor, 10%);
         transition: $fastMotion;
       }
     }

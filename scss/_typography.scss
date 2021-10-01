@@ -103,6 +103,17 @@ h2,
 .h2 {
   @include type(300, 7.5rem, -0.5, 1, capitalize);
   @extend %enType;
+  &::before{
+    content: " ";
+    height: 16rem;
+    display: block;
+    margin-top: -16rem;
+    visibility: hidden;
+    @include mScreen{
+        height: 15rem;
+        margin-top: -15rem;
+    }
+}
 }
 h3,
 .h3 {

@@ -1,5 +1,5 @@
 .index {
-  margin: 21rem 0;
+  margin: 17rem 0;
   display: inline-block;
   text-align: left;
   width: 26rem;
@@ -128,7 +128,7 @@ a.toc-link {
   text-transform: capitalize;
   position: relative;
   &:hover {
-    color: $orange;
+    color: $mainColor;
     transition: $mediumMotion;
   }
   @include lScreen() {
@@ -136,7 +136,7 @@ a.toc-link {
     margin: 0.5rem;
     &:hover {
       color: black;
-      background-color: lighten($orange,35%);
+      background-color: lighten($mainColor,35%);
       transition: $mediumMotion;
     }
   }
@@ -157,20 +157,20 @@ a.toc-link {
 }
 
 .is-active-link {
-  color: $orange !important;
+  color: $mainColor !important;
   margin-left: 2rem;
   &:before{
     content: '';
     width: 1rem;
     height: 1rem;
-    background-color: $orange;
+    background-color: $mainColor;
     position: absolute;
     top: 1.5rem;
     left: -2rem;
     border-radius: 50%;
   }
   @include lScreen() {
-    background-color: lighten($orange,35%);
+    background-color: lighten($mainColor,35%);
     color: black !important;
   }
 }
