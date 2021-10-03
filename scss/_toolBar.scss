@@ -49,6 +49,7 @@
     }
   }
   &_logout{
+    display: none;
     & img{
       width: 3rem;
       display: none;
@@ -65,6 +66,7 @@
     }
   }
   &_search{
+    display: none;
     & img{
       width: 3rem;
       display: none;

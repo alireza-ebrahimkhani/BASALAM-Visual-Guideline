@@ -60,7 +60,7 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .boxed {
     padding: 0 2rem;
   }
@@ -79,7 +79,7 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .row {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -95,7 +95,7 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .col-full {
     grid-column: span 4;
   }
@@ -111,7 +111,7 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .col-half {
     grid-column: span 4;
   }
@@ -127,7 +127,7 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .col-third {
     grid-column: span 4;
   }
@@ -143,56 +143,56 @@ article {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .col-quarter {
     grid-column: span 4;
   }
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-Thin.eot");
-  src: local("Peyda-Thin"), local("Peyda-Thin"), url("platform/fonts/farsi/eot/Peyda-Thin.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-Thin.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-Thin.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-Thin.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-Thin.eot");
+  src: local("Anjoman-Thin"), local("Anjoman-Thin"), url("platform/fonts/farsi/eot/Anjoman-Thin.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-Thin.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-Thin.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-Light.eot");
-  src: local("Peyda-Light"), local("Peyda-Light"), url("platform/fonts/farsi/eot/Peyda-Light.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-Light.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-Light.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-Light.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-Light.eot");
+  src: local("Anjoman-Light"), local("Anjoman-Light"), url("platform/fonts/farsi/eot/Anjoman-Light.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-Light.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-Light.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-Regular.eot");
-  src: local("Peyda-Regular"), local("Peyda-Regular"), url("platform/fonts/farsi/eot/Peyda-Regular.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-Regular.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-Regular.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-Regular.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-Regular.eot");
+  src: local("Anjoman-Regular"), local("Anjoman-Regular"), url("platform/fonts/farsi/eot/Anjoman-Regular.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-Regular.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-Regular.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-Medium.eot");
-  src: local("Peyda-Medium"), local("Peyda-Medium"), url("platform/fonts/farsi/eot/Peyda-Medium.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-Medium.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-Medium.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-Medium.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-Medium.eot");
+  src: local("Anjoman-Medium"), local("Anjoman-Medium"), url("platform/fonts/farsi/eot/Anjoman-Medium.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-Medium.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-Medium.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-SemiBold.eot");
-  src: local("Peyda-SemiBold"), local("Peyda-SemiBold"), url("platform/fonts/farsi/eot/Peyda-SemiBold.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-SemiBold.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-SemiBold.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-SemiBold.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-SemiBold.eot");
+  src: local("Anjoman-SemiBold"), local("Anjoman-SemiBold"), url("platform/fonts/farsi/eot/Anjoman-SemiBold.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-SemiBold.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-SemiBold.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-SemiBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Peyda";
-  src: url("platform/fonts/farsi/eot/Peyda-Bold.eot");
-  src: local("Peyda-Bold"), local("Peyda-Bold"), url("platform/fonts/farsi/eot/Peyda-Bold.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Peyda-Bold.woff2") format("woff2"), url("platform/fonts/farsi/woff/Peyda-Bold.woff") format("woff"), url("platform/fonts/farsi/ttf/Peyda-Bold.ttf") format("truetype");
+  font-family: "Anjoman";
+  src: url("platform/fonts/farsi/eot/Anjoman-Bold.eot");
+  src: local("Anjoman-Bold"), local("Anjoman-Bold"), url("platform/fonts/farsi/eot/Anjoman-Bold.eot?#iefix") format("embedded-opentype"), url("platform/fonts/farsi/woff2/Anjoman-Bold.woff2") format("woff2"), url("platform/fonts/farsi/woff/Anjoman-Bold.woff") format("woff"), url("platform/fonts/farsi/ttf/Anjoman-Bold.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -208,7 +208,7 @@ h1,
 }
 
 .fa {
-  font-family: "Peyda" !important;
+  font-family: "Anjoman" !important;
   direction: rtl;
   text-align: right;
   text-transform: unset;
@@ -365,6 +365,10 @@ a:hover {
   display: block;
 }
 
+.body1.fa {
+  font-size: 1.9rem;
+}
+
 .header {
   position: relative;
   z-index: 200;
@@ -493,7 +497,7 @@ a:hover {
 .header_popup {
   width: 60rem;
   height: calc(100vh - 6rem);
-  background-color: #EF5330;
+  background-color: white;
   position: fixed;
   top: 3rem;
   left: 3rem;
@@ -502,9 +506,7 @@ a:hover {
   transform-origin: bottom center;
   transition: 0.5s all ease;
   overflow: hidden;
-  backdrop-filter: blur(20px);
-  -moz-backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 1440px) {
@@ -513,10 +515,22 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .header_popup {
+    height: 100vh;
+    bottom: 0rem;
+    left: 0rem;
+    top: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .header_popup {
-    top: unset;
-    left: 3rem;
+    width: 100%;
+    height: 100vh;
+    bottom: 0rem;
+    left: 0rem;
+    top: 0;
   }
 }
 
@@ -526,31 +540,22 @@ a:hover {
   transition: 0.5s all ease;
 }
 
-@media only screen and (max-width: 768px) {
-  .header_popup--open {
-    width: calc(100% - 6rem);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .header_popup--open {
-    width: 100%;
-    height: 100vh;
-    bottom: 0rem;
-    left: 0rem;
-  }
-}
-
 .header_menu {
   padding: 0rem 3rem 0 3rem;
   position: fixed;
   top: 10rem;
-  width: 100%;
+  width: 60rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .header_menu {
     top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header_menu {
+    width: 100%;
   }
 }
 
@@ -621,7 +626,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .index {
     position: relative;
     width: 100%;
@@ -650,7 +655,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .index_wrapper {
     width: 100%;
     position: relative;
@@ -684,7 +689,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .index_dynamicTitle {
     padding: 1rem 0rem;
   }
@@ -856,22 +861,24 @@ a.toc-link:hover {
 }
 
 .accordion_lineI {
-  height: 0.125rem;
-  width: 2.125rem;
+  height: 0.25rem;
+  width: 2.25rem;
   background-color: black;
   position: absolute;
-  top: 1.5rem;
-  left: 0.5rem;
+  top: 1.375rem;
+  left: 0.375rem;
+  border-radius: 0.25rem;
 }
 
 .accordion_lineII {
-  height: 2.125rem;
-  width: 0.125rem;
+  height: 2.25rem;
+  width: 0.25rem;
   background-color: black;
   position: absolute;
-  left: 1.5rem;
-  top: 0.5rem;
+  left: 1.375rem;
+  top: 0.375rem;
   transition: .3s all ease;
+  border-radius: 0.25rem;
 }
 
 .accordion_lineII--open {
@@ -1061,7 +1068,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .toolBar {
     height: auto;
     padding: 0 2rem;
@@ -1085,7 +1092,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .toolBar_wrapper {
     grid-template-columns: 9.5rem 1fr;
     padding: 1rem 0;
@@ -1107,11 +1114,15 @@ h2 {
   margin-right: 2rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .toolBar_tools > div {
     margin-left: 2rem;
     margin-right: 0;
   }
+}
+
+.toolBar_logout {
+  display: none;
 }
 
 .toolBar_logout img {
@@ -1134,6 +1145,10 @@ h2 {
   .toolBar_logout span {
     display: none;
   }
+}
+
+.toolBar_search {
+  display: none;
 }
 
 .toolBar_search img {
