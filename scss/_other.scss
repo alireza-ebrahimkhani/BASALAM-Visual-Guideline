@@ -60,3 +60,152 @@ h2{
         display: none;
     }
 }
+.coloredHand{
+    position: relative;
+    &:hover &_svg>svg{
+        transform: rotate(10deg);
+        transform-origin: bottom center;
+        transition: $mediumMotion;
+    }
+    &:hover &_info{
+        opacity: 1;
+        transition: $mediumMotion;
+    }
+    &_info{
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        transform: translate(-50% , -50%);
+        padding-right: 7rem;
+        transition: $mediumMotion;
+    }
+    &_title{
+        margin-right: 2rem;
+    }
+    &_svg{
+        & svg{
+            padding-right: 7rem;
+            transition: .5s transform ease;
+            transform-origin: bottom center;
+            
+        }
+        
+    }
+}
+.accentColor{
+    width: 100%;
+    padding: 4rem;
+    background-color: #FF5C35;
+}
+.colorProportion{
+    & div{
+        padding:6rem 2rem;
+        text-align: center;
+    }
+}
+.imgMotion{
+    position: absolute;
+    
+}
+.calculator{
+    &_figure{
+        & img{
+            z-index: 1;
+        }
+    }
+    &_horizontal , &_vertical{
+        display: none;
+    }
+    & label{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    &_field{
+        width: calc(50% - 1.25rem);
+        display: inline-block;
+    }
+    & form{
+        padding: 3rem;
+    }
+    & input[type=text]{
+        width: 100%;
+        appearance: none;
+        border: 0;
+        border-bottom: 1px solid grey;
+        height: 4rem;
+        padding: 1rem 0;
+        background: none;
+        line-height: 0;
+        font-size: 2rem;
+        transition: $fastMotion;
+        &:hover{
+            background-color: $lightgrey;
+            transition: $fastMotion;
+        }
+        &:focus{
+            outline: none;
+            border-bottom: 1px solid $mainColor;
+            transition: $fastMotion;
+        }
+    }
+    & span{
+        float: right;
+    }
+    &_submit{
+        margin-top: 3rem;
+        appearance: none;
+        border:0;
+        width: 100%;
+        height: 5rem;
+        background-color: $mainColor;
+        color: white;
+        cursor: pointer;
+        transition: $fastMotion;
+        &:hover{
+            background-color: lighten($mainColor, 10%);
+            transition: $fastMotion;
+        }
+    }
+    &_items{
+        padding: 3rem;
+        & p{
+            padding: 1rem 0;
+        }
+        & h5{
+            margin-bottom: 2rem;
+        }
+        & p:not(:last-child){
+            border-bottom: 1px solid $lightgrey;
+        }
+    }
+    &_image{
+        background-color: $mainColor;
+        position: relative;
+        & > .calculator_figure{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            @include sScreen(){
+                position: relative;
+            }
+        }
+    }
+    &_info{
+        position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 3rem;
+    }
+}
+ul{
+    list-style: none;
+}
+.bullet{
+    list-style: disc;
+    & li{
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+}

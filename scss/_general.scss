@@ -9,6 +9,8 @@ html{
 $maxWidth:1440px;
 img, svg{
     display: block;
+
+    width: 100%;
 }
 $fastMotion : 0.2s all ease;
 $mediumMotion : 0.5s all ease;

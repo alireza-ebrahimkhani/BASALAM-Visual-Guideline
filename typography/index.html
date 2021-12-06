@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASALAM Visual Guidline</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="../platform/fav.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="../js/tocbot.min.js" type="text/javascript"></script>
+</head>
+<body id="body" class="body">
+  <div id="body_wrapper" class="body_wrapper">
+    <div class="toolBar">
+      <div class="toolBar_wrapper">
+        <div class="toolBar_tools">
+          <div class="toolBar_translate">
+            <div class="toolBar_translateWrapper">
+              <div class="toolBar_transSwitch" onclick="toggleSwitch()">
+                <div class="toolBar_transPin"></div>
+              </div>
+              <spam class="toolBar_transtxt subtitle1">Farsi</spam>
+            </div>
+          </div>
+          <div class="toolBar_logout">
+            <a href="#"><img src="platform/icons/logout.svg"><span>Logout</span></a>
+          </div>
+          <div class="toolBar_search">
+            <a href="#"><img src="platform/icons/search.svg"><span>Search</span></a>
+          </div>
+        </div>
+        <div class="toolBar_logo">
+          <svg class="toolBar_logoSvg" x="0px" y="0px"
+            viewBox="0 0 67 40" style="enable-background:new 0 0 67 40;" xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <circle cx="60.5" cy="33" r="2"/>
+                <path d="M62,16v6.5c0,0.8-0.7,1.5-1.5,1.5S59,23.3,59,22.5L59,8h-5l0,14.5c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5V16H62z"/>
+                <path d="M47,22.5c0,0.8-0.7,1.5-1.5,1.5S44,23.3,44,22.5V16h-5v6.5c0,0.8-0.7,1.5-1.5,1.5S36,23.3,36,22.5V16h-5v2.9
+                  c-0.2-0.6-0.5-1.1-0.9-1.7l0,0l-3.1-4.4l2.4-3.4l-4.1-2.9L24,8.4l-2.3-3.3L17.6,8l3.4,4.8l-3.1,4.4l0,0c-0.6,0.8-1,1.8-1.2,2.7
+                  C15.8,17.1,13.1,15,10,15c-3.9,0-7,3.1-7,7c0,1,0.2,2,0.6,2.9C1.5,26.1,0,28.4,0,31v2.5h5V31c0-1.1,0.9-2,2-2h2.7
+                  c0.1,0,0.2,0,0.3,0c3.3,0,6.1-2.3,6.8-5.4c0.9,3.1,3.8,5.4,7.2,5.4c3.3,0,6.2-2.2,7.1-5.2c0.6,3,3.2,5.2,6.4,5.2
+                  c1.5,0,2.9-0.5,4-1.4c1.1,0.9,2.5,1.4,4,1.4c3.6,0,6.5-2.9,6.5-6.5V16h-5V22.5z M10,24L10,24l-0.1,0c-1-0.1-1.9-0.9-1.9-2
+                  c0-1.1,0.9-2,2-2s2,0.9,2,2S11.1,24,10,24z M24,24c-1.4,0-2.5-1.1-2.5-2.5c0-0.5,0.2-1,0.5-1.4l2-2.9l2,2.9
+                  c0.3,0.4,0.5,0.9,0.5,1.4C26.5,22.9,25.4,24,24,24z"/>
+              </g>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <nav class="index">
+      <div class="index_wrapper">
+        <p class="index_fixTitle subtitle1">contents</p>
+        <p class="index_dynamicTitle subtitle1">contents</p>
+        <nav class="toc index_nav"></nav>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header_close"></div>
+      <div class="header_wrapper">
+          <div class="header_popup">
+            <div class="header_menu">
+              <div class="header_accordion accordion">
+                <ul class="accordion_list">
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>Brand Overview</h6>
+                    </div>
+                    <div class="accordion_body">
+                    </div>
+                  </li>
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>Corporate Identity</h6>
+                    </div>
+                    <div class="accordion_body">
+                      <ul class="header_items">
+                        <li class="header_item"><a href='../logo'>logo</a></li>
+                        <li class="header_item"><a href='../color'>color</a></li>
+                        <li class="header_item"><a href='../typography'>typography</a></li>
+                        <li class="header_item"><a href='../architecture'>brand architecture</a></li>
+                        <li class="header_item"><a href='../staitionary'>staitionary</a></li>
+                        <li class="header_item"><a href='../presentation'>presentation</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>Brand Expression</h6>
+                    </div>
+                    <div class="accordion_body">
+                      <ul class="header_items">
+                        <li class="header_item"><a href='../composition'>compositions system</a></li>
+                        <li class="header_item"><a href='../illustration'>illustration</a></li>
+                        <li class="header_item"><a href='../dynamic'>dynamic branding</a></li>
+                        <li class="header_item"><a href='../social'>social media</a></li>
+                        <li class="header_item"><a href='../data'>data visualization</a></li>
+                        <li class="header_item"><a href='../photography'>photography</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>product</h6>
+                    </div>
+                    <div class="accordion_body">
+                      <ul class="header_items">
+                        <li class="header_item"><a href='../principal'>principal</a></li>
+                        <li class="header_item"><a href='../components'>components</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span class="header_copyRight overline">all right reserved for basalam 2022</span>
+          </div>
+          <div class="header_hamIco">
+              <div class="header_line"></div>
+          </div>
+      </div>
+    </header>
+    <!-- 
+      <div class="logoMotion">
+      <lottie-player id="firstLottie" src="platform/motions/logoMotion.json" style="width: 100%;">"></lottie-player>
+      <script>
+        LottieInteractivity.create({
+          mode: 'scroll',
+          player: '#firstLottie',
+          container:'#body',
+          actions: [
+            {
+              visibility: [0, 1],
+              type: 'seek',
+              frames: [0, 370],
+            }
+          ],
+        });
+        </script>
+    </div>
+     -->
+     <main class="main">
+      <article class="content">
+        <section class="boxed mSpace">
+            <h1>Typography</h1>
+            <div class="breadcrums body1"><a href="#" class="body2">Basalam</a> / <a href="#" class="body2">Corporate identity</a> / <span class="body2">Typography</span></div>
+        </section>
+        <section class="boxed lSpace">
+            <div class="row">
+              <div class="col-half">
+                <p class="body1">
+                  Our typography system is approachable, contemporary and highly functional. We use "Farhang" and "Rama Gothic Rounded" for the most important title of each page and in the other hand "Anjoman" and "Inter" for other levels of typography.
+                  " Farhang" and "Rama Gothic Rounded" will contribute to the integration of the brand's visual identity with a lively and humorous spirit. Therefore, the "Anjoman" and "Inter" typographies have been chosen to maintain the same spirit, more readable and practical, so that the designer can convey the brand message more clearly.
+                </p>
+              </div>
+              <div class="col-half">
+                <p class="body1 fa">
+                  سیستم تایپوگرافی ما در دسترس، معاصر و بسیار کاربردی است. ما از فونت "فرهنگ"  و از "Rama Gothic Rounded" برای مهمترین تیتر هر صفحه ، از "انجمن" و "Inter" برای متون دیگر استفاده می‌کنیم. 
+                  "فرهنگ"  و "Rama Gothic Rounded" با روحیه‌ای سرزنده و شوخ طبع به یکپارچگی هویت دیداری برند  کمک خواهد کرد.  از این رو تایپ‌فیس‌های "انجمن" و "Inter" با حفظ همان روحیه، خوانا و کاربردی‌تر انتخاب شده‌اند تا طراح بتواند پیام برند را از به صراحت منتقل کند. 
+                </p>
+              </div>
+            </div>
+        </section>
+        <!-- farsi / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="farsi">Farsi Typefaces</h2>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-full">
+              <div class="tab">
+                <ul class="tab__list">
+                  <li class="tab__item tab__item--active subtitle1">Farhang</li>
+                  <li class="tab__item subtitle1">Anjoman</li>
+                </ul>
+                <div class="tab__contents">
+                  <div class="tab__content lazy-wrapper tab__content--active" style="padding-bottom: 58.33%">
+                    <img class="lazy " data-src="asset/typography/typography-1.svg" src="" alt="" />
+                  </div>
+                  <div class="tab__content lazy-wrapper" style="padding-bottom: 58.33%">
+                    <img class="lazy " data-src="asset/typography/typography-2.svg" src="" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-full">
+              <h3 id="farsi">Farhang</h3>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-5.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-25.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-full ">
+              <h3 id="farsi">Anjoman</h3>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-6.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-7.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-8.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-9.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- farsi / end -->
+        <!-- english / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="english">English Typefaces</h2>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-full">
+              <div class="tab">
+                <ul class="tab__list">
+                  <li class="tab__item tab__item--active subtitle1">Rama Gothic Rounded </li>
+                  <li class="tab__item subtitle1">Inter</li>
+                </ul>
+                <div class="tab__contents">
+                  <div class="tab__content lazy-wrapper tab__content--active" style="padding-bottom: 58.33%">
+                    <img class="lazy " data-src="asset/typography/typography-3.svg" src="" alt="" />
+                  </div>
+                  <div class="tab__content lazy-wrapper" style="padding-bottom: 58.33%">
+                    <img class="lazy " data-src="asset/typography/typography-4.svg" src="" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-full">
+              <h3 id="">Rama Gothic Rounded</h3>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-10.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-26.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+            <div class="row lSpace">
+              <div class="col-full ">
+                <h3 id="">Inter</h3>
+              </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-11.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-12.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-13.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-14.svg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- english / end -->
+        <!-- imagery / start -->
+        <section class="boxed lSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="imagery">imagery</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-half">
+              <p class="body1">
+                In cases of using text on images, use black text on lighter backgrounds and white text on darker images. Use the frames introduced in the Composition System when you are faced with a crowded and complex background.
+              </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                در مواقع استفاده از متن روی تصویر، از متن با رنگ سیاه روی پس‌زمینه‌های روشن‌تر و متن سفید روی پس‌زمینه‌های تیره‌تر استفاده کنید. در شرایطی که با بکگراند شلوغ و پیچیده مواجه شدید از قاب‌هایی که در فصل سیستم ترکیب‌بندی معرفی شده اند استفاده کنید.
+               </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-half">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/typography/typography-15.jpg" alt="" class="lazzy ">
+              </div>
+              <div class="row">
+                <p class="col-half caption">Use white text on dark backgrounds.</p>
+                <p class="col-half caption fa">از متن سفید روی پس‌زمینه‌های تیره‌تر استفاده کنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/typography/typography-16.jpg" alt="" class="lazzy ">
+              </div>
+              <div class="row">
+                <p class="col-half caption">Use black text on light backgrounds.</p>
+                <p class="col-half caption fa">از متن سیاه روی پس‌زمینه‌های روشن‌تر استفاده کنید. </p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/typography/typography-17.jpg" alt="" class="lazzy ">
+              </div>
+              <div class="row">
+                <p class="col-half caption">Use frames and bubles on complex images</p>
+                <p class="col-half caption fa">در تصاویر پیچیده‌تر از قاب استفاده کنید.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- imagery / end -->
+        <!-- crimes / start -->
+        <section class="boxed lSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="crimes">crimes</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-half">
+              <p class="body1">
+                To maintain the integrity and consistency of the brand, avoid these incorrect uses of typography.
+              </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                برای حفظ انسجام و یکپارچگی برند، از این اشتباهات در تایپوگرافی خودداری کنید.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-18.svg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Use Farhang just as the most important title of the page.</p>
+                <p class="col-half caption fa">از فونت فرهنگ فقط برای مهمترین تیتر هر صفحه استفاده کنید</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-19.svg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Use Rama Gothic Rounded just as the most important title of the page.</p>
+                <p class="col-half caption fa">از فونت راما گاتیک راندد فقط برای مهمترین تیتر هر صفحه استفاده کنید</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-24.svg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Just use the mentioned font weights.</p>
+                <p class="col-half caption fa">تنها از وزن‌ها آورده شده برای فونت استفاده کنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-22.jpg" alt="" class="lazzy whiteBg ">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Do not use frames in case, the text on the background is legible enough</p>
+                <p class="col-half caption fa">در شرایطی که نوشته روی بکگراند خوانایی کافی دارد از فریم استفاده نکنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-23.svg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Do not use colored typography.</p>
+                <p class="col-half caption fa">به حروف نوشته‌ها رنگ اختصاص ندهید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/typography/typography-27.svg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Do not use Farhang and Rama Gothic Rounded for Ui design</p>
+                <p class="col-half caption fa">از فونت فرهنگ و Rama Gothic Rounded برای طراحی رابط‌کاربری استفاده نکنید</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- crimes / end -->
+      </article>
+      
+    </main>
+    <footer class="footer"></footer>
+  </div>
+     <!-- toc setup / start -->
+    <script>
+      tocbot.init({
+        tocSelector: ".index_nav",
+        contentSelector: ".content",
+        headingSelector: "h2",
+        hasInnerContainers: false,
+        collapsibleClass: "is-collapsible",
+        fixedSidebarOffset: "auto",
+        scrollSmooth: false,
+      });
+    </script>
+    <!-- toc setup / end -->
+    <!-- lazy / start -->
+    <script>
+      !(function (window) {
+        var $q = function (q, res) {
+          if (document.querySelectorAll) {
+            res = document.querySelectorAll(q);
+          } else {
+            var d = document,
+              a = d.styleSheets[0] || d.createStyleSheet();
+            a.addRule(q, "f:b");
+            for (var l = d.all, b = 0, c = [], f = l.length; b < f; b++)
+              l[b].currentStyle.f && c.push(l[b]);
+  
+            a.removeRule(0);
+            res = c;
+          }
+          return res;
+        },
+          addEventListener = function (evt, fn) {
+            window.addEventListener
+              ? this.addEventListener(evt, fn, false)
+              : window.attachEvent
+                ? this.attachEvent("on" + evt, fn)
+                : (this["on" + evt] = fn);
+          },
+          _has = function (obj, key) {
+            return Object.prototype.hasOwnProperty.call(obj, key);
+          };
+  
+        function loadImage(el, fn) {
+          var img = new Image(),
+            src = el.getAttribute("data-src");
+          img.onload = function () {
+            if (!!el.parent) el.parent.replaceChild(img, el);
+            else el.src = src;
+  
+            fn ? fn() : null;
+          };
+          img.src = src;
+        }
+  
+        function elementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+  
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.top <=
+            (window.innerHeight || document.documentElement.clientHeight)
+          );
+        }
+        var images = new Array(),
+          query = $q("img.lazy"),
+          processScroll = function () {
+            for (var i = 0; i < images.length; i++) {
+              if (elementInViewport(images[i])) {
+                loadImage(images[i], function () {
+                  images.splice(i, i);
+                });
+              }
+            }
+          };
+        for (var i = 0; i < query.length; i++) {
+          images.push(query[i]);
+        }
+        processScroll();
+        addEventListener("scroll", processScroll);
+      })(this);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+  
+        if ("IntersectionObserver" in window) {
+          var lazyVideoObserver = new IntersectionObserver(function (
+            entries,
+            observer
+          ) {
+            entries.forEach(function (video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (
+                    typeof videoSource.tagName === "string" &&
+                    videoSource.tagName === "SOURCE"
+                  ) {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+  
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+  
+          lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      });
+    </script>
+    <!-- lazy / end -->
+    <!-- javascript import /start -->
+    <script src="../js/header.js" type="text/javascript"></script>
+    <script src="../js/toolBar.js" type="text/javascript"></script>
+    <script src="../js/translate.js" type="text/javascript"></script>
+    <script src="../js/accordion.js" type="text/javascript"></script>
+    <script src="../js/tab.js" type="text/javascript"></script>
+    <script src="../js/imgCmp.js" type="text/javascript"></script>
+    <!-- javascript import /start -->
+</body>
+</html>

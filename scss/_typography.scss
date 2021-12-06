@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');@font-face {
+  font-family: 'RamaGothicRounded';
+  src: url('platform/fonts/english/RamaGothicRoundedE-SemiBold.eot');
+  src: url('platform/fonts/english/RamaGothicRoundedE-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('platform/fonts/english/RamaGothicRoundedE-SemiBold.woff2') format('woff2'),
+      url('platform/fonts/english/RamaGothicRoundedE-SemiBold.woff') format('woff'),
+      url('platform/fonts/english/RamaGothicRoundedE-SemiBold.svg#RamaGothicRoundedE-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Anjoman";
@@ -73,7 +83,7 @@
   font-style: normal;
 }
 
-$enfont: "Poppins", sans-serif;
+$enfont: 'Inter', sans-serif;
 $fafont: "Anjoman";
 
 @mixin type($weight, $size, $spacing, $leading, $case) {
@@ -96,8 +106,8 @@ $fafont: "Anjoman";
 
 h1,
 .h1 {
-  @include type(400, 12rem, -1.5, 1, uppercase);
-  @extend %enType;
+  @include type(400, 16rem, -1.5, 1, uppercase);
+  font-family: 'RamaGothicRounded';
 }
 h2,
 .h2 {

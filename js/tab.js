@@ -20,12 +20,4 @@ window.addEventListener('load', (event) => {
            
        });
     });
-    
-    
-    
-    //console.log(tab_div);
-
-
-
-
   });
