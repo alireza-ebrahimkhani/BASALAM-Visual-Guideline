@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASALAM Visual Guidline</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="../platform/fav.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="../js/tocbot.min.js" type="text/javascript"></script>
+</head>
+<body id="body" class="body">
+  <div id="body_wrapper" class="body_wrapper">
+    <div class="toolBar">
+      <div class="toolBar_wrapper">
+        <div class="toolBar_tools">
+          <div class="toolBar_translate">
+            <div class="toolBar_translateWrapper">
+              <div class="toolBar_transSwitch" onclick="toggleSwitch()">
+                <div class="toolBar_transPin"></div>
+              </div>
+              <spam class="toolBar_transtxt subtitle1">Farsi</spam>
+            </div>
+          </div>
+          <div class="toolBar_logout">
+            <a href="#"><img src="platform/icons/logout.svg"><span>Logout</span></a>
+          </div>
+          <div class="toolBar_search">
+            <a href="#"><img src="platform/icons/search.svg"><span>Search</span></a>
+          </div>
+        </div>
+        <div class="toolBar_logo">
+          <svg class="toolBar_logoSvg" x="0px" y="0px"
+            viewBox="0 0 67 40" style="enable-background:new 0 0 67 40;" xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <circle cx="60.5" cy="33" r="2"/>
+                <path d="M62,16v6.5c0,0.8-0.7,1.5-1.5,1.5S59,23.3,59,22.5L59,8h-5l0,14.5c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5V16H62z"/>
+                <path d="M47,22.5c0,0.8-0.7,1.5-1.5,1.5S44,23.3,44,22.5V16h-5v6.5c0,0.8-0.7,1.5-1.5,1.5S36,23.3,36,22.5V16h-5v2.9
+                  c-0.2-0.6-0.5-1.1-0.9-1.7l0,0l-3.1-4.4l2.4-3.4l-4.1-2.9L24,8.4l-2.3-3.3L17.6,8l3.4,4.8l-3.1,4.4l0,0c-0.6,0.8-1,1.8-1.2,2.7
+                  C15.8,17.1,13.1,15,10,15c-3.9,0-7,3.1-7,7c0,1,0.2,2,0.6,2.9C1.5,26.1,0,28.4,0,31v2.5h5V31c0-1.1,0.9-2,2-2h2.7
+                  c0.1,0,0.2,0,0.3,0c3.3,0,6.1-2.3,6.8-5.4c0.9,3.1,3.8,5.4,7.2,5.4c3.3,0,6.2-2.2,7.1-5.2c0.6,3,3.2,5.2,6.4,5.2
+                  c1.5,0,2.9-0.5,4-1.4c1.1,0.9,2.5,1.4,4,1.4c3.6,0,6.5-2.9,6.5-6.5V16h-5V22.5z M10,24L10,24l-0.1,0c-1-0.1-1.9-0.9-1.9-2
+                  c0-1.1,0.9-2,2-2s2,0.9,2,2S11.1,24,10,24z M24,24c-1.4,0-2.5-1.1-2.5-2.5c0-0.5,0.2-1,0.5-1.4l2-2.9l2,2.9
+                  c0.3,0.4,0.5,0.9,0.5,1.4C26.5,22.9,25.4,24,24,24z"/>
+              </g>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <nav class="index">
+      <div class="index_wrapper">
+        <p class="index_fixTitle subtitle1">contents</p>
+        <p class="index_dynamicTitle subtitle1">contents</p>
+        <nav class="toc index_nav"></nav>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header_close"></div>
+      <div class="header_wrapper">
+          <div class="header_popup">
+            <div class="header_menu">
+              <div class="header_accordion accordion">
+                <ul class="accordion_list">
+                  <li class="accordion_item accordion_null">
+                    <h6><a class="h6" href='../brand'>Brand Overview</a></h6>
+                  </li>
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>Corporate Identity</h6>
+                    </div>
+                    <div class="accordion_body">
+                      <ul class="header_items">
+                        <li class="header_item"><a href='../logo'>logo</a></li>
+                        <li class="header_item"><a href='../color'>color</a></li>
+                        <li class="header_item"><a href='../typography'>typography</a></li>
+                        <li class="header_item"><a href='../staitionary'>staitionary</a></li>
+                        <li class="header_item"><a href='../presentation'>presentation</a></li>
+                        <li class="header_item"><a href='../workplace'>workplace</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion_item">
+                    <div class="accordion_header">
+                      <h6>Brand Expression</h6>
+                    </div>
+                    <div class="accordion_body">
+                      <ul class="header_items">
+                        <li class="header_item"><a href='../composition'>compositions system</a></li>
+                        <li class="header_item"><a href='../illustration/'>illustration</a></li>
+                        <li class="header_item"><a href='../dynamic'>dynamic branding</a></li>
+                        <li class="header_item"><a href='../social'>social media</a></li>
+                        <li class="header_item"><a href='../photography'>photography</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion_item accordion_null">
+                      <h6><a class="h6" href='../product'>product</a></h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span class="header_copyRight overline">all right reserved for basalam 2022</span>
+          </div>
+          <div class="header_hamIco">
+              <div class="header_line"></div>
+          </div>
+      </div>
+    </header>
+    <div class="logoMotion">
+      <lottie-player id="firstLottie" src="../platform/motions/logoMotion.json" style="width: 100%;">"></lottie-player>
+      <script>
+        LottieInteractivity.create({
+          mode: 'scroll',
+          player: '#firstLottie',
+          container:'#body',
+          actions: [
+            {
+              visibility: [0, 1],
+              type: 'seek',
+              frames: [0, 192],
+            }
+          ],
+        });
+        </script>
+    </div>
+     <main class="main">
+      <article class="content">
+        <section class="boxed mSpace">
+            <h1>Photography</h1>
+            <div class="breadcrums body1"><a href="#" class="body2">Basalam</a> / <a href="#" class="body2">Brand Expresion</a> / <span class="body2">photography</span></div>
+        </section>
+        <section class="boxed lSpace">
+            <div class="row">
+              <div class="col-half">
+                <p class="body1">
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis consectetur voluptate! Consequuntur unde atque autem accusamus accusantium dicta repudiandae quia suscipit voluptatum adipisci, rerum quas temporibus officia molestias officiis!                </p>
+              </div>
+              <div class="col-half">
+                <p class="body1 fa">
+                  درون مایه اصلی عکس‌های باسلام انتقال روحیه خوش‌بینی، مردمی بودن، تنوع و شکوفایی در بستر تعامل انسانی در فضای داد و ستد است. این عکس‌ها باید معتبر و واقعی باشند و به دور از هرگونه برخوردهای دراماتیک (اغراق‌های غیر ضروری)، ساده و باسلیقه به نمایش گذاشته شوند.
+                </p>
+              </div>
+              <div class="col-full">
+                <div class="lazy-wrapper " style="padding-top: 56.52%;">
+                  <img src="asset/photography/photography-1.jpg" alt="" class="lazzy whiteBg">
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- types / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="types">General Types</h2>
+            </div>
+            <div class="col-half">
+              <p class="body1">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis consectetur voluptate! Consequuntur unde atque autem accusamus accusantium dicta repudiandae quia suscipit voluptatum adipisci, rerum quas temporibus officia molestias officiis!                </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                تصاویر باسلام به سه دسته زیر زیر تقسیم می‌شوند؛
+              </p>
+              <ul class="fa body1 sSpace bullet">
+                <li>
+                  صحنه: منعکس کننده فضا و فرهنگی است که اجتماع باسلام در آن زیست می‌کند.
+                </li>
+                <li>
+                  سبک زندگی: این عکس‌ها بیانگر شخصیت مخاطبین، سبک زندگی و تعامل ایشان با یکدیگر است.
+                </li>
+                <li>
+                  محصولات: نحوه صحیح عکاسی محصولات به نحوی که در پلتفرم‌های دیجیتال باسلام بهترین عملکرد را از منظر زیبایی و فروش داشته باشند.                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="row lSpace">
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-4.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <h6>Scene</h6>
+            </div>
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-5.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <h6>Lifestyle</h6>
+            </div>
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-6.jpg" alt="" class="lazzy br">
+              </div>
+              <h6>Product</h6>
+            </div>
+          </div>
+        </section>
+        <!-- types / end -->
+        <!-- scene / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="scene">Scene</h2>
+            </div>
+            <div class="col-half">
+              <p class="body1">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis consectetur voluptate! Consequuntur unde atque autem accusamus accusantium dicta repudiandae quia suscipit voluptatum adipisci, rerum quas temporibus officia molestias officiis!                </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                این نوع عکس‌ها زیست بوم و فضای داد ستد اجتماع باسلام را به نمایش می‌گذارد. انتقال فرهنگ، معماری، جغرافیای مخاطبین باسلام بر عهده این تصاویر است. در این نوع عکس‌ها فضای کلی یک معماری و یا طبیعت زیست بوم به نمایش درمی‌آید و انسان نقش بسزایی در ترکیب‌بندی آن ندارد.
+              </p>
+            </div>
+          </div>
+          <div class="row semiLSpace">
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-7.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-8.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-4.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-full">
+              <h3 id="">guidance</h2>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-9.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">این عکس‌ها نباید در زوایای پیچیده که چشم انسان در حالت عادی قدرت تجربه آن را ندارد گرفته شود.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-10.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از زوایایی استفاده کنید که برای انسان باورپذیر و طبیعی باشد.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-11.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از کادر‌ها و زوایای بی‌سلیقه استفاده نکنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-12.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از کادر‌ها و زوایای زیبا و با سلیقه استفاده کنید.</p>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <!-- scene / end -->
+        <!-- lifestyle / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="lifestyle">lifestyle</h2>
+            </div>
+            <div class="col-half">
+              <p class="body1">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis consectetur voluptate! Consequuntur unde atque autem accusamus accusantium dicta repudiandae quia suscipit voluptatum adipisci, rerum quas temporibus officia molestias officiis!                </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                داد و ستد انسان‌ها با تنوع و گوناگونی ایشان در یک فضای تعاملی برای رسیدن به رشد و شکوفایی جمعی از اصول مهم باسلام است. این نوع عکس‌ها نقش انتقال تعامل انسان با فضا، جامعه، کسب و کار، داد و ستد و فرهنگ را دارند. شخصیت المان‌های انسانی باید معمولی، خوش‌بین و نمایانگر شوق زندگی باشند. در این عکس‌ها هنجار‌های جامعه، کرامت انسانی و اصول اخلاقی باید رعایت شوند.
+              </p>
+            </div>
+          </div>
+          <div class="row semiLSpace">
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-13.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-14.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-15.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-full">
+              <h3 id="">guidance</h2>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-16.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">ازمدل‌هایی که شخصیت آنها عموم جامعه را دربر نمی‌گیرند و حس غرابت مخاطب را با برند برمی‌انگیزد دوری کنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-17.jpg" alt="" class="lazzy ">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از مدل‌های معمولی و مردی استفاده کنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-18.jpg" alt="" class="lazzy  ">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از تصاویری که به کرامت انسانی خدشه وارد می‌کنند استفاده نکنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-19.jpg" alt="" class="lazzy whiteBg br">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از تصاویری استفاده کنید کرامت انسانی را با کار و کوشش به نمایش می‌گذارد.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-21.jpg" alt="" class="lazzy  ">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از کادر‌ها، زوایا، مدل و لوکیشن بی‌سلیقه استفاده نکنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 56.20%;">
+                <img src="asset/photography/photography-20.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از کادر‌ها، زوایا، مدل و لوکیشن باسلیقه استفاده کنید.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- lifestyle / end -->
+        <!-- product / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="product">product</h2>
+            </div>
+            <div class="col-half">
+              <p class="body1">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis consectetur voluptate! Consequuntur unde atque autem accusamus accusantium dicta repudiandae quia suscipit voluptatum adipisci, rerum quas temporibus officia molestias officiis!                </p>
+            </div>
+            <div class="col-half">
+              <p class="body1 fa">
+                نقش این عکس‌ها جلب اعتماد مشتری برای خرید است لذا تمرکز این تصاویر باید بر روی خود محصول باشد و ابعاد، جنس، کیفیت، رنگ و دیگر ویژگی‌های بصری محصول را به نمایش بگذارد.
+              </p>
+            </div>
+          </div>
+          <div class="row semiLSpace">
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/photography/photography-23.jpg" alt="" class="lazzy whiteBg br">
+              </div>
+            </div>
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/photography/photography-24.jpg" alt="" class="lazzy whiteBg br">
+              </div>
+            </div>
+            <div class="col-third">
+              <div class="lazy-wrapper sSpace" style="padding-top: 100%;">
+                <img src="asset/photography/photography-25.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-full">
+              <h3 id="">guidance</h2>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/photography/photography-26.jpg" alt="" class="lazzy whiteBg">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">محصولات را در ابهام عکاسی نکنید. </p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/photography/photography-22.jpg" alt="" class="lazzy br">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">محصول باید به وضوح در عکس مشخص باشد.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/photography/photography-28.jpg" alt="" class="lazzy  br">
+              </div>
+              <div class="dontLine"></div>
+              <span class="h6 dontTitle">Don't</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">از تصاویر غیر واقعی برای محصول استفاده نکنید.</p>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="lazy-wrapper " style="padding-top: 100%;">
+                <img src="asset/photography/photography-29.jpg" alt="" class="lazzy  br">
+              </div>
+              <div class="doLine"></div>
+              <span class="h6 doTitle">Do</span>
+              <div class="row">
+                <p class="col-half caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas?</p>
+                <p class="col-half caption fa">تصویر باید واقعی و گویای مشخصات بصری محصول باشد.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- product / end -->
+      </article>
+      
+    </main>
+    <footer class="footer"></footer>
+  </div>
+     <!-- toc setup / start -->
+    <script>
+      tocbot.init({
+        tocSelector: ".index_nav",
+        contentSelector: ".content",
+        headingSelector: "h2",
+        hasInnerContainers: false,
+        collapsibleClass: "is-collapsible",
+        fixedSidebarOffset: "auto",
+        scrollSmooth: false,
+      });
+    </script>
+    <!-- toc setup / end -->
+    <!-- lazy / start -->
+    <script>
+      !(function (window) {
+        var $q = function (q, res) {
+          if (document.querySelectorAll) {
+            res = document.querySelectorAll(q);
+          } else {
+            var d = document,
+              a = d.styleSheets[0] || d.createStyleSheet();
+            a.addRule(q, "f:b");
+            for (var l = d.all, b = 0, c = [], f = l.length; b < f; b++)
+              l[b].currentStyle.f && c.push(l[b]);
+  
+            a.removeRule(0);
+            res = c;
+          }
+          return res;
+        },
+          addEventListener = function (evt, fn) {
+            window.addEventListener
+              ? this.addEventListener(evt, fn, false)
+              : window.attachEvent
+                ? this.attachEvent("on" + evt, fn)
+                : (this["on" + evt] = fn);
+          },
+          _has = function (obj, key) {
+            return Object.prototype.hasOwnProperty.call(obj, key);
+          };
+  
+        function loadImage(el, fn) {
+          var img = new Image(),
+            src = el.getAttribute("data-src");
+          img.onload = function () {
+            if (!!el.parent) el.parent.replaceChild(img, el);
+            else el.src = src;
+  
+            fn ? fn() : null;
+          };
+          img.src = src;
+        }
+  
+        function elementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+  
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.top <=
+            (window.innerHeight || document.documentElement.clientHeight)
+          );
+        }
+        var images = new Array(),
+          query = $q("img.lazy"),
+          processScroll = function () {
+            for (var i = 0; i < images.length; i++) {
+              if (elementInViewport(images[i])) {
+                loadImage(images[i], function () {
+                  images.splice(i, i);
+                });
+              }
+            }
+          };
+        for (var i = 0; i < query.length; i++) {
+          images.push(query[i]);
+        }
+        processScroll();
+        addEventListener("scroll", processScroll);
+      })(this);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+  
+        if ("IntersectionObserver" in window) {
+          var lazyVideoObserver = new IntersectionObserver(function (
+            entries,
+            observer
+          ) {
+            entries.forEach(function (video) {
+              if (video.isIntersecting) {
+                for (var source in video.target.children) {
+                  var videoSource = video.target.children[source];
+                  if (
+                    typeof videoSource.tagName === "string" &&
+                    videoSource.tagName === "SOURCE"
+                  ) {
+                    videoSource.src = videoSource.dataset.src;
+                  }
+                }
+  
+                video.target.load();
+                video.target.classList.remove("lazy");
+                lazyVideoObserver.unobserve(video.target);
+              }
+            });
+          });
+  
+          lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        }
+      });
+    </script>
+    <!-- lazy / end -->
+    <!-- javascript import /start -->
+    <script src="../js/header.js" type="text/javascript"></script>
+    <script src="../js/toolBar.js" type="text/javascript"></script>
+    <script src="../js/translate.js" type="text/javascript"></script>
+    <script src="../js/accordion.js" type="text/javascript"></script>
+    <script src="../js/tab.js" type="text/javascript"></script>
+    <script src="../js/imgCmp.js" type="text/javascript"></script>
+    <!-- javascript import /start -->
+</body>
+</html>

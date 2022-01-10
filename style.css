@@ -629,6 +629,10 @@ a:hover {
   font-weight: 300;
 }
 
+.header_accordion h6 a {
+  font-weight: 300;
+}
+
 .header_item {
   list-style: none;
 }
@@ -952,6 +956,10 @@ a.toc-link:hover {
   transition: .3s all ease;
 }
 
+.accordion_null {
+  padding: 2rem 0;
+}
+
 .imgComparison img {
   display: block;
 }
@@ -1030,7 +1038,7 @@ a.toc-link:hover {
   position: relative;
 }
 
-.lazy-wrapper svg, .lazy-wrapper img {
+.lazy-wrapper svg, .lazy-wrapper img, .lazy-wrapper > div {
   position: absolute;
   top: 0;
   z-index: -1;

@@ -157,6 +157,9 @@
   &_accordion {
     & h6 {
       font-weight: 300;
+      & a{
+        font-weight: 300;
+      }
     }
   }
   &_item {
