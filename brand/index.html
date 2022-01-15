@@ -13,9 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="../js/tocbot.min.js" type="text/javascript"></script>
 </head>
-<body id="body" class="body">
+<body id="body " class="body darkBody">
   <div id="body_wrapper" class="body_wrapper">
-    <div class="toolBar">
+    <div class="toolBar toolBar--special">
       <div class="toolBar_wrapper">
         <div class="toolBar_tools">
           <div class="toolBar_translate">
@@ -114,61 +114,444 @@
           </div>
       </div>
     </header>
-      <div class="logoMotion">
-      <lottie-player id="firstLottie" src="../platform/motions/logoMotion.json" style="width: 100%;">"></lottie-player>
-      <script>
-        LottieInteractivity.create({
-          mode: 'scroll',
-          player: '#firstLottie',
-          container:'#body',
-          actions: [
-            {
-              visibility: [0, 1],
-              type: 'seek',
-              frames: [0, 192],
-            }
-          ],
-        });
-        </script>
-    </div>
      
     <main class="main">
       <article class="content faContent">
+
+        <section class="boxed mSpace">
+          <div class="row">
+            <div class="col-full">
+              <div class="lazzy" style="width: 16.75rem; margin: 0 auto;">
+                <lottie-player autoplay loop mode="normal" src="../platform/platform-logomotion.json"style="width: 100%"></lottie-player>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="boxed lSpace">
             <h1 class="center">Brand Overview</h1>
             <div class="breadcrums body1 center"><a href="#" class="body2">Basalam</a> / <span class="body2">Brand Overview</span></div>
         </section>
-        <!-- sign / start -->
+        <!-- purpose / start -->
         <section class="boxed xlSpace">
           <div class="row">
             <div class="col-full">
-              <h2 id="sign" class="center">Core purpose</h2>
-              <h3  class="center fa">چرایی ما</h3>
+              <h2 id="purpose" class="center">Core purpose</h2>
+              <h4  class="center fa">چرایی ما</h4>
             </div>
           </div>
-          <div class="smallRow">
-            <div class="col-full mSpace">
-              <p class="body1 fa">
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full mSpace" >
+              <p class="h6 center fa">
                 ما باور داریم که انسان آزاد آفریده شده و ظرفیتی بی‌نهایت برای شکوفایی دارد. مخلوقی در نهایتِ گوناگونی و استعداد که همواره می‌تواند در جهت رشد و کمال حرکت کند.
               </p>
-              <p class="body1 fa">
+              <p class="h6 center fa">
                 نیت و قصد ما در باسلام فراهم کردن بستری برای شکوفایی بی‌حدومرز انسان است.
               </p>
-              <p class="body1 fa sSpace">
+        </section>
+        <!-- purpose / end -->
+        <!-- ideology / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="ideology" class="center">Brand Ideology</h2>
+              <h4  class="center fa">چرایی ما</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full sSpace">
+              <p class="body1 fa">
                 باسلام ورای ساختارها می‌رود.
-<br>
-جمع ناممکن‌ها را ممکن می‌داند.
-<br>
-افکار ما، ابعاد دارد:
+                <br>
+                جمع ناممکن‌ها را ممکن می‌داند.
+                <br>
+                افکار ما، ابعاد دارد:
               </p>
             </div>
-            <div class="col-full">
-              <h4 class="fa">بُعدِ اول؛ تنوع در مقیاس </h4>
+            <div class="col-full sSpace">
+              <h5 class="fa accent">بُعدِ اول؛ تنوع در مقیاس </h5>
               <p class="body1 fa">تنوع بی‌نهایت در باسلام ضرب‌در بی نهایت عمق و ارتفاع.</p>
+            </div>
+            <div class="col-full sSpace">
+              <h5 class="fa accent"> بُعدِ دوم؛ انسان و زندگی  </h5>
+              <p class="body1 fa">در آن مقیاس بی‌نهایت، باسلام حال و هوای انسانی و صمیمی شبیه زندگی‌های محلی و بازار (local) را حفظ خواهد کرد.</p>
+            </div>
+            <div class="col-full sSpace">
+              <h5 class="fa accent"> بُعدِ سوم؛ حکمرانی مشارکتی عادلانه و بی‌نقص</h5>
+              <p class="body1 fa">با وجود هرج‌ومرج و  دخالت‌های انسانی، با سرمایه‌گذاری سنگین بر روی تکنولوژی و AI به سطحی از فرمانداری عادلانه و بی‌نقص می‌رسیم که دادوستد در این بازار جزو امن‌ترین دادوستدها به حساب خواهد آمد.</p>
+            </div>
+            <div class="col-full sSpace">
+              <h5 class="fa accent">بُعدِ چهارم؛ فراتر از دادوستد</h5>
+              <p class="body1 fa">باسلام با مشارکت و تعامل‌های جمعی به مرزهایی فراتر از داد و ستد می‌رود. بستری که مشارکت در آن سویه‌ای از  زیبایی و حُسن دارد و برکت رساندن به‌هم، اتفاقی فراگیر در این بازار خواهد بود.</p>
             </div>
           </div>
         </section>
-        <!-- sign / end -->
+        <!-- ideology / end -->
+        <!-- vision / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="vision" class="center">vision</h2>
+              <h4 class="center fa">چشم‌انداز</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full mSpace">
+              <p class="h6 center  fa">
+                رویای ما جهانی است صمیمی‌تر، درهم‌تنیده‌تر و بدون مرز. جهانی که با دادوستد بی‌حدومرزِ انسان‌ها باهم،
+                به‌هم نزدیک‌تر می‌شود.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- vision / end -->
+        <!-- mission / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="mission" class="center">mission</h2>
+              <h4 class="center fa">ماموریت</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full mSpace">
+              <p class="h6 center  fa">
+                باسلام می‌خواهد حد و مرزی جز تلاشِ انسان‌ها برای شکوفایی نباشد. 
+                <br>
+                می‌خواهیم بازاری بی‌مرز برای انسان‌ها بسازیم، بازاری که با هم می‌سازیم و باهم در آن شکوفا می‌شویم.                
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- mission / end -->
+        <!-- principles / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="principles" class="center">Brand Principles</h2>
+              <h4 class="center fa">اصول ما</h4>
+            </div>
+          </div>
+          <div class="row smallRow" style="direction: rtl;">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">اول؛ انسان </h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">انسان اصل اول باسلام است.</p></li>
+                  <li><p class="body1 fa">انسان برمی‌خیزد و باسلام جان می‌گیرد.</p></li>
+                  <li><p class="body1 fa">باسلام تلاشی‌ست برای بزرگداشت و شکوفایی انسان.</p></li>
+                  <li><p class="body1 fa">حضور انسان آبادانیست.</p></li>
+                </ul>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">دوم؛ سلام </h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">آشنایی و دوستی</p></li>
+                  <li><p class="body1 fa">صلح و صفا</p></li>
+                  <li><p class="body1 fa">تعامل آزاد و همدلی</p></li>
+                  <li><p class="body1 fa">شروع یک انجمن، اجتماع</p></li>
+                </ul>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">سوم؛ دیوانگی </h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">اصل بودن، فطرت</p></li>
+                  <li><p class="body1 fa">عمیق بودن و بی‌قراری</p></li>
+                  <li><p class="body1 fa">جرئت و جسارت</p></li>
+                </ul>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">چهارم؛ گشودگی </h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">هویت‌ها، فردیت‌ها، تفاوت‌ها</p></li>
+                  <li><p class="body1 fa">خود، دیگران و طبیعت</p></li>
+                  <li><p class="body1 fa">مهربانی، رحمت، شفقت</p></li>
+                  <li><p class="body1 fa">استقلال و آزادگی</p></li>
+                </ul>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">پنجم؛ بی‌مرزی</h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">گستردگی و توزیع‌شدگی</p></li>
+                  <li><p class="body1 fa">انحصارشکنی و ساختارشکنی</p></li>
+                  <li><p class="body1 fa">هم‌افزایی بی‌حدوحصر</p></li>
+                </ul>
+            </div>
+            <div class="col-half ">
+                <h5 class="fa sSpace accent">ششم؛ شکوفایی</h5>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">اوجِ بودن</p></li>
+                  <li><p class="body1 fa">قدرت جمعی</p></li>
+                  <li><p class="body1 fa">اثر بخشی در  اجتماع</p></li>
+                  <li><p class="body1 fa">فرشته</p></li>
+                </ul>
+            </div>
+          </div>
+        </section>
+        <!-- principles / end -->
+        <!-- expression / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="expression" class="center">expression</h2>
+              <h4 class="center fa">بیان برند</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">تنوع و تکثر</h5>
+              <p class="body1 fa">باسلام همان جامعه‌ی داخل آن است.</p>
+              <p class="body1 fa">جامعه‌ا‌ی انسانی، پذیرا و متکثر.</p>
+              <p class="body1 fa ">با اندیشه‌های متنوع. زیبا  و گاهی نازیبا.  با استعدادهای گوناگون. </p>
+              <p class="body1 fa">این جامعه‌ با همه‌ی تکثرش در یک چیز متحد است: </p>
+              <p class="body1 fa sSpace">باور به ظرفیت رشدِ بی‌حد و مرز انسان و احترام برای تمام این تفاوت‌ها. در باسلام قرار نیست کسی جای دیگری را تنگ کند.
+                بلکه از هم یاد می‌گیریم و با هم رشد می‌کنیم.   </p>
+                <ul class="fa body1 sSpace bullet">
+                  <li><p class="body1 fa">انسان‌های مختلف؛ پیر و جوان، زن و مرد؛</p></li>
+                  <li><p class="body1 fa">شهرهای مختلف؛ از کوچکترین روستا تا شهرهای بزرگ؛</p></li>
+                  <li><p class="body1 fa">دین و مذهب  مختلف؛ از شیعه و سنی تا زرتشتی و مسیحی. </p></li>
+                  <li><p class="body1 fa">قومیت‌های مختلف؛ کرد و عرب و فارس. تاجیک و افغان و ترکمن. ترک و هندی. سویسی و چینی. برزیلی و کنیایی. و ...</p></li>
+                  <li><p class="body1 fa">غرفه‌دارهای مختلف؛ از خانگی تا کارخانه‌ای. تولیدکننده یا فروشنده. با کیفیت فروش و بنجل فروش. سنتی و امروزی.</p></li>
+                  <li><p class="body1 fa">محصولات مختلف؛ از شیر مرغ تا جان آدمیزاد؛</p></li>
+                  <li><p class="body1 fa">در قیمت‌های مختلف؛ ارزان و به‌صرفه. مفت یا گران؛
+                    و جمع ما که متنوع و متکثر است.</p></li>
+                </ul>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">فرهنگ عامه</h5>
+              <p class="body1 fa">وقتی شیدای انسان و تنوع و گوناگونی آن هستیم؛ فرهنگِ ناشی از آن را هم دوست داریم.</p>
+              <p class="body1 fa">فرهنگ عامه. معمولی، مردمی،  خاکی و واقعی. </p>
+              <p class="body1 fa ">نه مبتذل و فرومایه هستیم و نه روشنفکر دور از جامعه. </p>
+              <p class="body1 fa ">درست مثل همان‌ چیزی هستیم که در دل جامعه و بازار می‌بینیم. </p>
+              <p class="body1 fa ">مثل یک بازار واقعی، خودمانی هستیم.  </p>
+
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">غرفه‌دارهای ما، چه استادکار، چه‌تازه کار؛ چه خانگی چه کارخانه؛ همه کنار هم هستند.</p></li>
+                <li><p class="body1 fa">مشتری‌های ما وقتی وارد بازار باسلام می‌شوند  مثل این است که به یک دورهمی راحت آمده ‌اند.</p></li>
+                <li><p class="body1 fa">خود ما نیز انسان‌های عادی (البته با روحیه‌ای غیرعادی) هستیم و جمعی خاکی تشکیل داده‌ایم.  </p></li>
+                <li><p class="body1 fa">کارمان با تمام پیچیدگی‌های پلتفرمی، تکنولوژیک و انسانیش در این مقیاس؛
+                  کاری‌ به قدمت تاریخ است: قدمت بازار.</p></li>
+                <li><p class="body1 fa">با هم کار می‌کنیم. از هم یاد می‌گیریم و به هم کمک می‌کنیم. معمولی و راحت. بدون تکلف.</p></li>
+              </ul>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">حس شوخ‌طبعی</h5>
+              <p class="body1 fa">ما با مخاطب‌مان و خودمان دوست هستیم. صمیمانه گفت‌وگو  و احوالپرسی  می‌کنیم و با رعایت احترام و حد و حدود شوخی هم می‌کنیم.</p>
+              <p class="body1 fa sSpace">گوناگونی بامزه است</p>
+
+              <p class="body1 fa accent">حس شوخ‌طبعی در باسلام</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">هزاران  اتفاق بامزه در  این بازار می‌افتد؛</p></li>
+                <li><p class="body1 fa">هزاران محصول مختلف و نامتعارف وجود دارد؛</p></li>
+                <li><p class="body1 fa">هزاران انسان با روحیه‌های متعدد از جدی تا شوخ‌طبع در این بازارند؛</p></li>
+                <li><p class="body1 fa">هزار ان تبلیغ و پیام عجیب و بامزه هرروز به چشم می‌خورد.</p></li>
+                <li><p class="body1 fa">و جمع ما مثل مدیرعاملش باهم شوخی می‌کنیم.</p></li>
+              </ul>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">اشتیاق در آشوب </h5>
+              <p class="body1 fa sSpace">بازار و اجتماع‌ ما پویاست و مدام در حال نوشدن و دگرگونی. ما نیز همراه این آشوب به شکل زاینده‌ای حرکت می‌کنیم. به جای مقاومت بی‌نتیجه در برابر این شورش ،
+                خود را به جریان می‌سپاریم و به وجد می‌آییم.
+                 از این شورش متحیر می‌شویم، یاد می‌گیریم و لذت می‌بریم.
+                 انعطاف‌ ما در  این همراهی، ناشی از اعتقادمان
+                به فرهنگِ مشارکت‌پذیری و خرد جمعی ‌است.  
+              </p>
+
+              <p class="body1 fa accent">اشتیاق در آشوبِ در باسلام</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">هزاران  اتفاق بامزه در  این بازار می‌افتد؛</p></li>
+                <li><p class="body1 fa">هزاران محصول مختلف و نامتعارف وجود دارد؛</p></li>
+                <li><p class="body1 fa">هزاران انسان با روحیه‌های متعدد از جدی تا شوخ‌طبع در این بازارند؛</p></li>
+                <li><p class="body1 fa">هزار ان تبلیغ و پیام عجیب و بامزه هرروز به چشم می‌خورد.</p></li>
+                <li><p class="body1 fa">و جمع ما مثل مدیرعاملش باهم شوخی می‌کنیم.</p></li>
+              </ul>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">زبان جهانی</h5>
+              <p class="body1 fa sSpace">
+                ما باور داریم که امروزه بیش از هر زمانی مرزها کمرنگ شده‌اند
+و بستری که در آن فعال هستیم  نیز بیش از پیش جهانی شده است. 
+ما در باسلام می‌خواهیم که جهانی باشیم
+و برندمان در سطح دنیا دوست داشته شود. 
+ما با وجود علاقه‌ی وافری که به کشورمان داریم،
+همه‌ی جهان را  وطن خود می‌دانیم
+و زیر آسمان‌های جهان زندگی می‌کنیم.
+              </p>
+              <p class="body1 fa accent">زبان جهانی در باسلام</p>
+              <p class="body1 fa ">نام ما نامی جهانی است و هر جای دنیا شناخته شده‌است.</p>
+              <p class="body1 fa ">ما تجربه‌های جهانی را دنبال می‌کنیم و دوستشان داریم؛</p>
+              <p class="body1 fa ">از طرفی زبان دادوستد نیز خود زبانی جهانی است؛ </p>
+              <p class="body1 fa ">باسلام به روی مخاطبان خارجی باز است؛</p>
+              <p class="body1 fa ">تا کنون هم میزبان آن‌ها بوده‌ایم.</p>
+              <p class="body1 fa ">باسلام توسعه‌ی منطقه‌ای خواهد داشت</p>
+              <p class="body1 fa ">و بستری برای دادوستد جهانیان خواهد بود.</p>
+
+            </div>
+          </div>
+        </section>
+        <!-- expression / end -->
+        <!-- slogan / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="slogan" class="center">slogan</h2>
+              <h4 class="center fa">شعار</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full mSpace">
+              <p class="h6 center  fa sSpace">
+                شعار ما جایگاه اصلی ما را به عنوان «بازار» مشخص می‌کند
+                و مفاهیم و روحیه‌ی برند را در «بی‌مرز» بودن خود جای‌ داده است.
+                باسلام بازاری بی‌‌نهایت و بی‌کران و بی‌شمار است.
+              </p>
+              <p class="h6 center  fa mSpace">
+                چون انسان، موجودی این‌چنین است.
+              </p>
+              <p class="h3 center accent fa">
+باسلام؛ بازار بی‌مرز              </p>
+            </div>
+          </div>
+        </section>
+        <!-- slogan / end -->
+        <!-- culture / start -->
+        <section class="boxed xlSpace">
+          <div class="row">
+            <div class="col-full">
+              <h2 id="culture" class="center">Brand Culture</h2>
+              <h4 class="center fa">فرهنگ</h4>
+            </div>
+          </div>
+          <div class="row smallRow">
+            <div class="col-full ">
+              <div class="lazy-wrapper sSpace" style="padding-top: 56.20%;">
+                <img src="asset/brand/brand-1.jpg" alt="" class="lazzy whiteBg">
+              </div>
+            </div>
+            <div class="col-full ">
+              <p class="body1 fa">فرهنگ باسلام انگار از جنس پیمان و عهد است.</p>
+              <p class="body1 fa">خیلی با خودمان کلنجار رفتیم که آیا باید فرهنگ و آرزو و باورهایمان را در پستو نگه‌داریم و درونی به آن‌ها متعهد باشیم؟ یا باید فریادش زد؟</p>
+              <p class="body1 fa">ترس‌مان از فریاد زدن فرهنگ این بود که می‌دانستیم امروز بهترینِ خودمان نیستیم. اشتباه زیاد می‌کنیم. تند تند پیمان‌هایمان را فراموش می‌کنیم.</p>
+              <p class="body1 fa">آخرش دیدیم قایمکی‌طور نمی‌شود. باید پیمان‌هایمان در برابر هم را با جسارت بالا فریاد بزنیم. خودمان را در معرض قضاوت و بازخورد در برابر آن‌ها قرار دهیم تا مدام به‌هم یادآوری کنیم. پایبندی‌ به این پیمان‌ها را از هم بخواهیم.</p>
+              <p class="body1 fa sSpace">و مدام خودمان را بر اساس پایبندی‌مان به این پیمان‌ها، ارزیابی کنیم.</p>
+              <p class="body1 fa  mSpace accent">زندگی‌شان کنیم. نفس‌شان بکشیم.</p>
+            </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">جمع ما فروتن است.</h5>
+              <p class="body1 fa sSpace">سخاوتمندی | سادگی | خلوص | خیرخواهی</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">از ته قلب محبت می‌کنیم.ساده و خالص. بدون‌محاسبه‌گری‌های منفعت‌طلبانه.</p></li>
+                <li><p class="body1 fa">آدم‌ها را دوست داریم. با هم خواهر و برادریم. یا در دین یا در خلقت.</p></li>
+                <li><p class="body1 fa">هیچ ‌انسانی به خاطر جنسیت، قومیت، نژاد، رنگ، ثروت یا مدرک تحصیلی‌ش بر دیگری برتری ندارد.</p></li>
+                <li><p class="body1 fa"> مخلص آدم‌هایی هستیم که آدم‌ها برایشان مهم هستند. نوکر آدم‌هایی هستیم که برای شکوفایی خلق خدا می‌جنگند.</p></li>
+                <li><p class="body1 fa">میخواهیم با همه گشوده باشیم. مهربان باشیم. شفقت داشته باشیم.</p></li>
+                <li><p class="body1 fa">آغوشمان برای یادگیری و فهمیدن از همه‌ باز است و در اشتراک‌گذاری دانش و داشته‌هایمان سخاوتمندیم.</p></li>
+                <li><p class="body1 fa">دوست داریم همه با هم باشیم. همه با هم موفق شویم. همه با هم خوشحال باشیم.</p></li>
+                <li><p class="body1 fa">ادا را دوست نداریم. کار وقتی کار است که واقعی و خالص باشد.</p></li>
+                <li><p class="body1 fa">سعی می‌کنیم در تعامل با کره زمین و اهالی آن کم هزینه باشیم. اهل ریخت‌وپاش الکی نیستیم. </p></li>
+              </ul>
+          </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">جمع ما باورمند است.</h5>
+              <p class="body1 fa sSpace">شور  | امید |  آزادگی |  اشتیاق</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">محکم کار می‌کنیم. امیدواریم.</p></li>
+                <li><p class="body1 fa">جهان را زیبا می‌بینیم و می‌خواهیم زیباترش کنیم. با سلام. این نگاهِ ما به جهان است .</p></li>
+                <li><p class="body1 fa">نشاط و انرژی در کار برایمان مهم است. وقتی انرژی در اوج‌ش نیست نشانه‌ای از یک گیر درونی است.</p></li>
+                <li><p class="body1 fa">سکون و بی‌حالی چندش است. وقتی می‌شود حرکت کرد و پرواز کرد، چسبیدن به زمین چرا؟</p></li>
+                <li><p class="body1 fa">بی‌قراریم. پرتلاشیم. این بی‌قراری از باورمان می‌آید.</p></li>
+                <li><p class="body1 fa">بلندپروازیم. چشم‌اندازی ابدی هست؟ آن را می‌خواهیم:)</p></li>
+                <li><p class="body1 fa">انگار که همیشه راهی هست و پیدا می‌شود. </p></li>
+                <li><p class="body1 fa">سرسختِ زاینده هستیم. این بار نشد، بار بعدی. این راه نشد، راه بعدی. شکست معنا ندارد. یاد می‌گیریم.</p></li>
+                <li><p class="body1 fa">به استقبال مساله‌ها می‌رویم. مساله‌ها فرصتِ شکوفایی است. حل مساله یعنی رفعِ موانعِ شکوفایی.</p></li>
+                <li><p class="body1 fa">می‌شود با خیرخواهی برای دیگران به موفقیت رسید. موفقیت جمع ما در گرو شکست یا محدودیت کس دیگری نیست.</p></li>
+                <li><p class="body1 fa">آزادیم. آزادِ آزاد. میخواهیم درگیر هیچ بندی غیر از خدا نباشیم.  بندی هم برای کسی نباشیم.</p></li>
+              </ul>
+          </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">جمع ما باورمند است.</h5>
+              <p class="body1 fa sSpace">شور  | امید |  آزادگی |  اشتیاق</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">محکم کار می‌کنیم. امیدواریم.</p></li>
+                <li><p class="body1 fa">جهان را زیبا می‌بینیم و می‌خواهیم زیباترش کنیم. با سلام. این نگاهِ ما به جهان است .</p></li>
+                <li><p class="body1 fa">نشاط و انرژی در کار برایمان مهم است. وقتی انرژی در اوج‌ش نیست نشانه‌ای از یک گیر درونی است.</p></li>
+                <li><p class="body1 fa">سکون و بی‌حالی چندش است. وقتی می‌شود حرکت کرد و پرواز کرد، چسبیدن به زمین چرا؟</p></li>
+                <li><p class="body1 fa">بی‌قراریم. پرتلاشیم. این بی‌قراری از باورمان می‌آید.</p></li>
+                <li><p class="body1 fa">بلندپروازیم. چشم‌اندازی ابدی هست؟ آن را می‌خواهیم:)</p></li>
+                <li><p class="body1 fa">انگار که همیشه راهی هست و پیدا می‌شود. </p></li>
+                <li><p class="body1 fa">سرسختِ زاینده هستیم. این بار نشد، بار بعدی. این راه نشد، راه بعدی. شکست معنا ندارد. یاد می‌گیریم.</p></li>
+                <li><p class="body1 fa">به استقبال مساله‌ها می‌رویم. مساله‌ها فرصتِ شکوفایی است. حل مساله یعنی رفعِ موانعِ شکوفایی.</p></li>
+                <li><p class="body1 fa">می‌شود با خیرخواهی برای دیگران به موفقیت رسید. موفقیت جمع ما در گرو شکست یا محدودیت کس دیگری نیست.</p></li>
+                <li><p class="body1 fa">آزادیم. آزادِ آزاد. میخواهیم درگیر هیچ بندی غیر از خدا نباشیم.  بندی هم برای کسی نباشیم.</p></li>
+              </ul>
+          </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">جمع ما روراست است.</h5>
+              <p class="body1 fa sSpace">راستی | درستی | صراحت</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa">جز با درستی و یکپارچگی درونی نمی‌شود به اوج انرژی و نشاط رسید.</p></li>
+                <li><p class="body1 fa">اوجِ بودن= اوجِ انرژی.</p></li>
+                <li><p class="body1 fa">وقتی اشتباه کردیم، جرات پذیرش آن و فریاد زدن حقیقت را داریم. سهم خودمان را بر می‌داریم و درست‌ش می‌کنیم.</p></li>
+                <li><p class="body1 fa">پشت سر آدم‌ها حرف نمی‌زنیم. اگر مشکلی هست، اول به خودش می‌گوییم. خیرخواهانه، صریح و با جسارت. اگر حل نشد خودش را CC می‌کنیم و escalate می‌کنیم.</p></li>
+                <li><p class="body1 fa">کار را تمام می‌کنیم. بهانه‌ای باقی‌نمی‌گذاریم. کارهای ناتمام یکپارچگی و انرژی‌مان را سوراخ می‌کند.</p></li>
+                <li><p class="body1 fa">تلاش می‌کنیم حرف و عمل‌مان یکی‌ باشد. خودمان باشیم. ظاهر و باطن:)</p></li>
+                <li><p class="body1 fa">در باسلام امانت‌دار پول و اعتبار و شخصیت آدم‌ها هستیم.</p></li>
+                <li><p class="body1 fa">از سیاست‌ورزی بدمان می‌آید.</p></li>
+                <li><p class="body1 fa">از دید همکارها و اهالی بازار کم هزینه و پرفایده هستیم.</p></li>
+                <li><p class="body1 fa">نفع ما از طریق نفع مردم می‌آید. نیازی به خودخواهی نداریم. منفعت اگر می‌خواهیم، باید نفع برسانیم.</p></li>
+                <li><p class="body1 fa">مسئولیت‌پذیر و کنش‌گریم. وقتی مشکلی هست، مشکل همه ما است. وقتی چالشی هست به سمت حلش می‌رویم. </p></li>
+              </ul>
+          </div>
+            <div class="col-full mSpace">
+              <h5 class="fa sSpace accent">جمع ما مشارکتی است.</h5>
+              <p class="body1 fa sSpace">گشودگی |  توزیع شدگی |  فراوانی</p>
+              <ul class="fa body1 sSpace bullet">
+                <li><p class="body1 fa"> انحصارطلبی اخ است:) دوست داریم همه چیز در اختیار همه باشد.</p></li>
+                <li><p class="body1 fa">به فراوانی باور داریم. جا برای همه هست. زمین خدا وسیع است.</p></li>
+                <li><p class="body1 fa">به پلتفرم و اکوسیستم بودن باور داریم. همه در کنار هم و با هم. به اندازه‌ی تلاش هر کس جا برای رشد و شکوفایی هست.</p></li>
+                <li><p class="body1 fa">دنبال توزیع‌شدگی بیشتر و بیشتر هستیم. انگار توزیع‌شدگی به عدالت و فرصت‌دهی نزدیک‌تر است.</p></li>
+                <li><p class="body1 fa">ما بستر را توسعه می‌دهیم. و از تماشای موفقیت آدم‌ها در آن خوشحال می‌شویم. خودمان کاری جز توسعه‌ی پلتفرم انجام نمی‌دهیم.</p></li>
+                <li><p class="body1 fa">با مشارکت و حضور اهالی است که رشد می‌کنیم.</p></li>
+                <li><p class="body1 fa">هر جایی که در تصمیم‌‌های بزرگ نگرانی داشتیم و به اطمینان نرسیدیم، می‌رویم سراغ اهالی باسلام (community) و از اهلش می‌پرسیم.</p></li>
+                <li><p class="body1 fa">هم به همۀ هویت‌ها و گوناگونی‌ها احترام می‌گذاریم و دوست‌شان داریم؛ هم خودمان هستیم و باورش داریم.</p></li>
+              </ul>
+          </div>
+          </div>
+        </section>
+        <!-- culture / end -->
       </article>
     </main>
     <footer class="footer"></footer>

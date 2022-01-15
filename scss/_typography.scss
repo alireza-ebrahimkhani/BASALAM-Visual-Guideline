@@ -149,7 +149,7 @@ h4,
 }
 h5,
 .h5 {
-  @include type(400, 3rem, 0, auto, capitalize);
+  @include type(600, 3rem, 0, auto, capitalize);
   @extend %enType;
 }
 h6,
@@ -213,4 +213,7 @@ a {
   .fa{
     display: block;
   }
+}
+.accent{
+  color: $mainColor;
 }

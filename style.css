@@ -335,7 +335,7 @@ h4,
 
 h5,
 .h5 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 3rem;
   letter-spacing: 0;
   line-height: auto;
@@ -441,6 +441,10 @@ a:hover {
 
 .faContent .fa {
   display: block;
+}
+
+.accent {
+  color: #ff5c39;
 }
 
 .header {
@@ -1295,12 +1299,130 @@ ul {
 }
 
 .bullet {
-  list-style: disc;
+  list-style: none;
 }
 
 .bullet li {
+  position: relative;
   margin-right: 2rem;
   margin-bottom: 1rem;
+}
+
+.bullet li::before {
+  content: '';
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: #ff5c39;
+}
+
+.orangeBg {
+  background-color: #ff5c39;
+}
+
+.darkBody {
+  background-color: black;
+  color: white;
+}
+
+.darkBody .header_line {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .darkBody .header_line {
+    background-color: black;
+  }
+}
+
+.darkBody .header_line::before, .darkBody .header_line::after {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .darkBody .header_line::before, .darkBody .header_line::after {
+    background-color: black;
+  }
+}
+
+.darkBody .header_line--open {
+  background-color: black;
+}
+
+.darkBody .header_line--open::before, .darkBody .header_line--open::after {
+  background-color: black;
+}
+
+.darkBody .header_popup {
+  background-color: #ff5c39;
+  color: black;
+}
+
+.darkBody .header_popup a {
+  color: black;
+}
+
+.darkBody a {
+  color: white;
+}
+
+.darkBody a:hover {
+  opacity: .6;
+}
+
+.darkBody .index p {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .darkBody .index p {
+    color: black;
+  }
+}
+
+.darkBody .index a {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .darkBody .index a {
+    color: black;
+  }
+}
+
+.darkBody .index a:hover {
+  opacity: 1;
+  color: #ff5c39;
+}
+
+.darkBody .toolBar_logoSvg {
+  fill: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .darkBody .toolBar_logoSvg {
+    fill: black;
+  }
+}
+
+.darkBody article {
+  padding-top: 6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .darkBody article {
+    padding-top: 15.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .darkBody article {
+    padding-top: 20.5rem;
+  }
 }
 
 .toolBar {
@@ -1520,6 +1642,20 @@ ul {
 .toolBar_search {
   align-self: center;
   justify-self: right;
+}
+
+.toolBar--special .toolBar_logo {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .toolBar--special .toolBar_logo {
+    display: block;
+  }
+}
+
+.toolBar--special .toolBar_translate {
+  display: none;
 }
 
 .tab {
