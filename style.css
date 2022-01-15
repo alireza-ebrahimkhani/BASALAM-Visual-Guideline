@@ -435,6 +435,14 @@ a:hover {
   font-size: 1.9rem;
 }
 
+.center {
+  text-align: center;
+}
+
+.faContent .fa {
+  display: block;
+}
+
 .header {
   position: relative;
   z-index: 200;

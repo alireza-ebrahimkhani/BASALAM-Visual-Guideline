@@ -206,3 +206,11 @@ a {
 .body1.fa{
   font-size: 1.9rem;
 }
+.center{
+  text-align: center;
+}
+.faContent{
+  .fa{
+    display: block;
+  }
+}
