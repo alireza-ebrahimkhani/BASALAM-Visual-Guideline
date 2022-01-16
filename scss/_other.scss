@@ -215,9 +215,93 @@ ul{
     list-style: none;
 }
 .bullet{
-    list-style: disc;
+    list-style: none;
     & li{
+        position: relative;
         margin-right: 2rem;
         margin-bottom: 1rem;
+        &::before{
+            content: '';
+            position: absolute;
+            right: -2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: .75rem;
+            height: .75rem;
+            border-radius: 50%;
+            background-color: $mainColor;
+        }
     }
+}
+.orangeBg{
+    background-color: $mainColor;
+}
+.darkBody{
+ background-color: black;
+ color: white;
+ & .header_line{
+    background-color: white;
+    @include lScreen(){
+        background-color: black;
+    }
+     &::before , &::after{
+        background-color: white;
+        @include lScreen(){
+        background-color: black;
+        }
+     }
+ }
+ & .header_line--open{
+    background-color: black;
+    &::before , &::after{
+        background-color: black;
+     }
+ }
+ & .header_popup {
+    background-color: $mainColor;
+    color: black;
+    & a{
+        color: black;
+    }
+ }
+ & a{
+     color: white;
+     &:hover{
+         opacity: .6;
+     }
+ }
+ & .index {
+     & p {
+         color: white;
+         @include lScreen(){
+            color: black;
+        }
+     }
+    & a{
+        color: white;
+        @include lScreen(){
+            color: black;
+        }
+        &:hover{
+            opacity: 1;
+            color: $mainColor;
+        }
+        
+    }
+ }
+ & .toolBar_logoSvg{
+     fill: white;
+     @include sScreen(){
+        fill: black;
+     }
+ }
+ & article{
+     padding-top: 6rem;
+     @include lScreen(){
+        padding-top: 15.5rem;
+     }
+     @include sScreen(){
+        padding-top: 20.5rem;
+     }
+ }
 }
