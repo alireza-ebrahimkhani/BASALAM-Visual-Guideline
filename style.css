@@ -1299,25 +1299,13 @@ ul {
 }
 
 .bullet {
-  list-style: none;
+  list-style: disc;
 }
 
 .bullet li {
-  position: relative;
   margin-right: 2rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
-}
-
-.bullet li::before {
-  content: '';
-  position: absolute;
-  right: -2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: .75rem;
-  height: .75rem;
-  border-radius: 50%;
-  background-color: #ff5c39;
 }
 
 .orangeBg {
