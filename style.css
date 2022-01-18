@@ -288,6 +288,17 @@ h1,
   font-family: 'RamaGothicRounded';
 }
 
+@media only screen and (max-width: 600px) {
+  h1,
+  .h1 {
+    font-weight: normal;
+    font-size: 12rem;
+    letter-spacing: -1.5;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
 h2,
 .h2 {
   font-weight: 400;
@@ -296,6 +307,17 @@ h2,
   line-height: 1;
   text-transform: capitalize;
   font-family: 'RamaGothicRounded';
+}
+
+@media only screen and (max-width: 600px) {
+  h2,
+  .h2 {
+    font-weight: 400;
+    font-size: 9rem;
+    letter-spacing: -0.5;
+    line-height: 1;
+    text-transform: capitalize;
+  }
 }
 
 h2::before,

@@ -120,11 +120,17 @@ h1,
 .h1 {
   @include type(normal, 16rem, -1.5, 1, uppercase);
   font-family: 'RamaGothicRounded';
+  @include sScreen() {
+    @include type(normal, 12rem, -1.5, 1, uppercase);
+  }
 }
 h2,
 .h2 {
   @include type(400, 12rem, -0.5, 1, capitalize);
   font-family: 'RamaGothicRounded';
+  @include sScreen() {
+    @include type(400, 9rem, -0.5, 1, capitalize);
+  }
   &::before{
     content: " ";
     height: 16rem;
