@@ -466,7 +466,7 @@ a:hover {
 }
 
 .accent {
-  color: #ff5c39;
+  color: #ff5c35;
 }
 
 .header {
@@ -501,7 +501,7 @@ a:hover {
   .header_hamIco {
     top: unset;
     bottom: 4rem;
-    background-color: #ff5c39;
+    background-color: #ff5c35;
     border-radius: 50%;
   }
 }
@@ -864,7 +864,7 @@ a.toc-link {
 }
 
 a.toc-link:hover {
-  color: #ff5c39;
+  color: #ff5c35;
   transition: 0.5s all ease;
 }
 
@@ -875,7 +875,7 @@ a.toc-link:hover {
   }
   a.toc-link:hover {
     color: black;
-    background-color: #ffefec;
+    background-color: #ffece8;
     transition: 0.5s all ease;
   }
 }
@@ -897,7 +897,7 @@ a.toc-link:hover {
 }
 
 .is-active-link {
-  color: #ff5c39 !important;
+  color: #ff5c35 !important;
   margin-left: 2rem;
 }
 
@@ -905,7 +905,7 @@ a.toc-link:hover {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-color: #ff5c39;
+  background-color: #ff5c35;
   position: absolute;
   top: 1.5rem;
   left: -2rem;
@@ -914,7 +914,7 @@ a.toc-link:hover {
 
 @media only screen and (max-width: 1024px) {
   .is-active-link {
-    background-color: #ffefec;
+    background-color: #ffece8;
     color: black !important;
   }
 }
@@ -1050,7 +1050,7 @@ a.toc-link:hover {
 }
 
 .imgComparison__silder::-webkit-slider-thumb:hover {
-  background: #ff5c39;
+  background: #ff5c35;
   transition: .3s all ease;
 }
 
@@ -1059,7 +1059,7 @@ a.toc-link:hover {
   -webkit-appearance: none;
   width: 16px;
   height: 8px;
-  border: 1px solid #ff5c39;
+  border: 1px solid #ff5c35;
   background: white;
   cursor: pointer;
 }
@@ -1249,7 +1249,7 @@ h2 {
 
 .calculator input[type=text]:focus {
   outline: none;
-  border-bottom: 1px solid #ff5c39;
+  border-bottom: 1px solid #ff5c35;
   background-color: #F0F0F0;
   transition: 0.2s all ease;
 }
@@ -1264,14 +1264,14 @@ h2 {
   border: 0;
   width: 100%;
   height: 5rem;
-  background-color: #ff5c39;
+  background-color: #ff5c35;
   color: white;
   cursor: pointer;
   transition: 0.2s all ease;
 }
 
 .calculator_submit:hover {
-  background-color: #ff866c;
+  background-color: #ff8568;
   transition: 0.2s all ease;
 }
 
@@ -1292,7 +1292,7 @@ h2 {
 }
 
 .calculator_image {
-  background-color: #ff5c39;
+  background-color: #ff5c35;
   position: relative;
 }
 
@@ -1331,7 +1331,7 @@ ul {
 }
 
 .orangeBg {
-  background-color: #ff5c39;
+  background-color: #ff5c35;
 }
 
 .darkBody {
@@ -1368,7 +1368,7 @@ ul {
 }
 
 .darkBody .header_popup {
-  background-color: #ff5c39;
+  background-color: #ff5c35;
   color: black;
 }
 
@@ -1406,7 +1406,7 @@ ul {
 
 .darkBody .index a:hover {
   opacity: 1;
-  color: #ff5c39;
+  color: #ff5c35;
 }
 
 .darkBody .toolBar_logoSvg {
@@ -1626,11 +1626,11 @@ ul {
 
 .toolBar_transSwitch--active {
   transition: 0.2s all ease;
-  background-color: #ff5c39;
+  background-color: #ff5c35;
 }
 
 .toolBar_transSwitch--active:hover {
-  background-color: #ff3a10;
+  background-color: #ff3b0c;
   transition: 0.2s all ease;
 }
 
@@ -1687,7 +1687,7 @@ ul {
 }
 
 .tab__item--active {
-  border-bottom: 2px solid #ff5c39;
+  border-bottom: 2px solid #ff5c35;
   color: black;
 }
 
@@ -1730,12 +1730,12 @@ ul {
 }
 
 .slideShow a {
-  background-color: #ff5c39;
+  background-color: #ff5c35;
   border-radius: 50%;
 }
 
 .slideShow a:hover {
-  background-color: #ff9f8b;
+  background-color: #ff9e87;
 }
 
 /* Position the "next button" to the right */
