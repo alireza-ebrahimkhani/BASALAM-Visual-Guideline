@@ -69,7 +69,11 @@ h2{
     @include lScreen{
         display: none;
     }
+    @include sHScreen{
+        display: none;
+    }
 }
+
 .coloredHand{
     position: relative;
     &:hover &_svg>svg{

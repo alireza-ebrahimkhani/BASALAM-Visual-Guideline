@@ -1155,6 +1155,12 @@ h2 {
   }
 }
 
+@media only screen and (max-height: 800px) {
+  .logoMotion {
+    display: none;
+  }
+}
+
 .coloredHand {
   position: relative;
 }

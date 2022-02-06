@@ -34,3 +34,8 @@ $xlScreen:1440px;
         @content;
     }
 }
+@mixin sHScreen() {
+    @media only screen and (max-height:800px){
+        @content;
+    }
+}
